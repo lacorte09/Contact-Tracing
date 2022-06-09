@@ -7,6 +7,12 @@ namespace Contact_Trace
             InitializeComponent();
         }
 
+        public void reset()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");
@@ -14,6 +20,8 @@ namespace Contact_Trace
             file.WriteLine("Middle Name: " + textBox2.Text);
             file.WriteLine("Last Name: "+ textBox3.Text);
             file.Close();
+            MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
+            reset();
         }
     }
 }
