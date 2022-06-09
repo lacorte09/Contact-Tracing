@@ -48,11 +48,16 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(149, 434);
+            this.button1.Location = new System.Drawing.Point(150, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -101,18 +106,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(30, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 15);
+            this.label5.Size = new System.Drawing.Size(77, 15);
             this.label5.TabIndex = 5;
-            this.label5.Text = "House No.:";
+            this.label5.Text = "Contact No.::";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(56, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.Size = new System.Drawing.Size(39, 15);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Street:";
+            this.label6.Text = "Email:";
             // 
             // label7
             // 
@@ -212,12 +217,61 @@
             this.textBox9.Size = new System.Drawing.Size(144, 23);
             this.textBox9.TabIndex = 19;
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(102, 290);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(144, 23);
+            this.textBox10.TabIndex = 20;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(102, 319);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(144, 23);
+            this.textBox11.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(22, 293);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 15);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Contact No.:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(57, 322);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(39, 15);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Email:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(150, 434);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(68, 15);
+            this.linkLabel1.TabIndex = 24;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "View Forms";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(392, 469);
+            this.ClientSize = new System.Drawing.Size(379, 469);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -270,5 +324,10 @@
         private TextBox textBox7;
         private TextBox textBox8;
         private TextBox textBox9;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private Label label11;
+        private Label label12;
+        private LinkLabel linkLabel1;
     }
 }
