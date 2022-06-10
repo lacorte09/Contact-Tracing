@@ -15,3 +15,4 @@ C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\Contact-Trace.pdb
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\Contact-Trace.genruntimeconfig.cache
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\ref\Contact-Trace.dll
+C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\Contact_Trace.Properties.Resources.resources
