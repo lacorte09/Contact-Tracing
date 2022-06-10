@@ -55,43 +55,10 @@ namespace Contact_Trace
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             StreamReader reader = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");
-            int line = 0;
-            String[] contacts = new String[18];
-            while (!reader.EndOfStream)
-            {
-                for (int i = 0; i < 18; i++)
-                {
-                    contacts[i] = reader.ReadLine();
-                    MessageBox.Show(Text, contacts[i]);
-                }
-            }
-            //static void Main(String[] args)
-            //{
-            //    String[] contacts = new String[18];
-            //    StreamReader reader = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");
-            //
-            //    for (int i = 0; i < 18; i++)
-            //    {
-            //        contacts[i] = reader.ReadLine();
-            //        String line = reader.ReadLine();
-            //        MessageBox.Show(line);
-            //    }
-            //    reader.Close();
-            //}
-            //StreamReader reader = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");           
-            //for (int i = 0; i < 17; i++)
-            //{
-            //    String line = reader.ReadLine();
-            //    MessageBox.Show(line);
-            //   if (line == null)
-            //    {
-            //        break;
-            //    }
-            //}
 
-            //String line = reader.ReadToEnd();
-            //MessageBox.Show(line);
-            //reader.Close();           
+            String line = reader.ReadToEnd();
+            MessageBox.Show(line, "Form", MessageBoxButtons.OK);
+            reader.Close();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

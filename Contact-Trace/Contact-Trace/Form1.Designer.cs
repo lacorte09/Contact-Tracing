@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,17 +69,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(209, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(49, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 15);
@@ -88,24 +92,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(207, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 15);
+            this.label2.Size = new System.Drawing.Size(86, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "(Middle Name)";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(383, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 15);
+            this.label3.Size = new System.Drawing.Size(72, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "(Last Name)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(12, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 15);
@@ -115,6 +124,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(12, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 15);
@@ -124,6 +134,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(305, 167);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 15);
@@ -133,6 +144,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(285, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 15);
@@ -142,6 +154,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(12, 283);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 15);
@@ -151,6 +164,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(286, 244);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(56, 15);
@@ -246,6 +260,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(15, 367);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 15);
@@ -255,6 +270,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Location = new System.Drawing.Point(12, 334);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 15);
@@ -264,6 +280,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(211, 434);
             this.linkLabel1.Name = "linkLabel1";
@@ -276,6 +293,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(132, 9);
             this.label13.Name = "label13";
@@ -286,6 +304,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Location = new System.Drawing.Point(142, 121);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(48, 15);
@@ -302,6 +321,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Location = new System.Drawing.Point(309, 121);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 15);
@@ -318,6 +338,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Location = new System.Drawing.Point(12, 244);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(47, 15);
@@ -327,6 +348,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Location = new System.Drawing.Point(12, 212);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(53, 15);
@@ -336,6 +358,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Location = new System.Drawing.Point(286, 212);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(58, 15);
@@ -368,6 +391,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(515, 469);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox15);
