@@ -433,7 +433,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Contact Trace";
+            this.Text = "Contact Tracing";
             this.ResumeLayout(false);
             this.PerformLayout();
 
