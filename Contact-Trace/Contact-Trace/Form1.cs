@@ -30,8 +30,8 @@ namespace Contact_Trace
         {
             StreamWriter file = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt", true);
             counter++;
-            file.WriteLine("Contact No." + counter);
-            file.WriteLine("Firstt Name: " + textBox1.Text);
+            file.WriteLine("-------" + "Contact No." + counter + "-------");
+            file.WriteLine("First Name: " + textBox1.Text);
             file.WriteLine("Middle Name: " + textBox2.Text);
             file.WriteLine("Age: " + textBox4.Text);
             file.WriteLine("Gender: " + textBox12.Text);
@@ -46,7 +46,7 @@ namespace Contact_Trace
             file.WriteLine("Barangay: " + textBox9.Text);
             file.WriteLine("Nationality: " + textBox7.Text);
             file.WriteLine("Religion: " + textBox16.Text);
-            file.WriteLine("------------------------------------------------------------");
+            file.WriteLine("-------" + "End of Contact No." + counter + "-------");
             file.Close();
             MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
             reset();
@@ -55,15 +55,21 @@ namespace Contact_Trace
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             StreamReader reader = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");
-
-            String line = reader.ReadToEnd();
-            MessageBox.Show(line, "Form", MessageBoxButtons.OK);
+            while (!reader.EndOfStream)
+            {
+                String line = reader.ReadLine();
+                MessageBox.Show(line);
+            }
             reader.Close();
+
+            //String line = reader.ReadToEnd();
+            //MessageBox.Show(line, "Form");
+            //reader.Close();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            //napindot po
         }
     }
 }
