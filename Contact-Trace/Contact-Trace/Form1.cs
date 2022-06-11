@@ -58,7 +58,7 @@ namespace Contact_Trace
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine();
-                MessageBox.Show(line);
+                MessageBox.Show(line, "Forms");
             }
             reader.Close();
 
