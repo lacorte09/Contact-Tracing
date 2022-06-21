@@ -28,14 +28,12 @@ namespace Contact_Trace
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\FullName.txt", true);
-            fullname.WriteLine("First Name: " + typeKita1.Text);
-            fullname.WriteLine("Middle Name: " + typeKita2.Text);
-            fullname.WriteLine("Last name: " + typeKita3.Text);
-            fullname.Close();
-
-            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\WholeForm.txt", true);
             counter++;
+
+            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\FullName.txt", true);
+            fullname.WriteLine("Contact No." + counter + ":" + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text);
+            fullname.Close();
+            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\WholeForm.txt", true);
             whole.WriteLine("-------" + "Contact No." + counter + "-------");
             whole.WriteLine("First Name: " + typeKita1.Text);
             whole.WriteLine("Middle Name: " + typeKita2.Text);
