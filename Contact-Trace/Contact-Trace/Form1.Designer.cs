@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.clickMe1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,9 +51,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.clickMeToo1 = new System.Windows.Forms.LinkLabel();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.typeKita5 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.typeKita6 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -65,6 +59,12 @@
             this.typeKita9 = new System.Windows.Forms.TextBox();
             this.typeKita12 = new System.Windows.Forms.TextBox();
             this.typeKita16 = new System.Windows.Forms.TextBox();
+            this.clickMeToo2 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo3 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo4 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo5 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo6 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo7 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // clickMe1
@@ -77,49 +77,6 @@
             this.clickMe1.Text = "Submit";
             this.clickMe1.UseVisualStyleBackColor = false;
             this.clickMe1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(49, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "(First Name)";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(207, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "(Middle Name)";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(383, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "(Last Name)";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(12, 122);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 15);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Age:";
             // 
             // label5
             // 
@@ -301,16 +258,6 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "Personal Information";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Location = new System.Drawing.Point(142, 121);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 15);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Gender:";
-            // 
             // typeKita5
             // 
             this.typeKita5.Location = new System.Drawing.Point(194, 118);
@@ -318,16 +265,6 @@
             this.typeKita5.Size = new System.Drawing.Size(88, 23);
             this.typeKita5.TabIndex = 27;
             this.typeKita5.TextChanged += new System.EventHandler(this.typeKita5_TextChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(309, 121);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 15);
-            this.label15.TabIndex = 28;
-            this.label15.Text = "Marital Status:";
             // 
             // typeKita6
             // 
@@ -387,6 +324,90 @@
             this.typeKita16.Size = new System.Drawing.Size(403, 23);
             this.typeKita16.TabIndex = 36;
             // 
+            // clickMeToo2
+            // 
+            this.clickMeToo2.AutoSize = true;
+            this.clickMeToo2.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo2.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo2.Location = new System.Drawing.Point(49, 75);
+            this.clickMeToo2.Name = "clickMeToo2";
+            this.clickMeToo2.Size = new System.Drawing.Size(72, 15);
+            this.clickMeToo2.TabIndex = 37;
+            this.clickMeToo2.TabStop = true;
+            this.clickMeToo2.Text = "(First Name)";
+            this.clickMeToo2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo2_LinkClicked);
+            // 
+            // clickMeToo3
+            // 
+            this.clickMeToo3.AutoSize = true;
+            this.clickMeToo3.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo3.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo3.Location = new System.Drawing.Point(209, 75);
+            this.clickMeToo3.Name = "clickMeToo3";
+            this.clickMeToo3.Size = new System.Drawing.Size(86, 15);
+            this.clickMeToo3.TabIndex = 38;
+            this.clickMeToo3.TabStop = true;
+            this.clickMeToo3.Text = "(Middle Name)";
+            this.clickMeToo3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo3_LinkClicked);
+            // 
+            // clickMeToo4
+            // 
+            this.clickMeToo4.AutoSize = true;
+            this.clickMeToo4.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo4.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo4.Location = new System.Drawing.Point(389, 75);
+            this.clickMeToo4.Name = "clickMeToo4";
+            this.clickMeToo4.Size = new System.Drawing.Size(72, 15);
+            this.clickMeToo4.TabIndex = 39;
+            this.clickMeToo4.TabStop = true;
+            this.clickMeToo4.Text = "(Last Name)";
+            this.clickMeToo4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo4_LinkClicked);
+            // 
+            // clickMeToo5
+            // 
+            this.clickMeToo5.AutoSize = true;
+            this.clickMeToo5.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo5.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo5.Location = new System.Drawing.Point(17, 121);
+            this.clickMeToo5.Name = "clickMeToo5";
+            this.clickMeToo5.Size = new System.Drawing.Size(31, 15);
+            this.clickMeToo5.TabIndex = 40;
+            this.clickMeToo5.TabStop = true;
+            this.clickMeToo5.Text = "Age:";
+            this.clickMeToo5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo5_LinkClicked);
+            // 
+            // clickMeToo6
+            // 
+            this.clickMeToo6.AutoSize = true;
+            this.clickMeToo6.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo6.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo6.Location = new System.Drawing.Point(146, 121);
+            this.clickMeToo6.Name = "clickMeToo6";
+            this.clickMeToo6.Size = new System.Drawing.Size(48, 15);
+            this.clickMeToo6.TabIndex = 41;
+            this.clickMeToo6.TabStop = true;
+            this.clickMeToo6.Text = "Gender:";
+            this.clickMeToo6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo6_LinkClicked);
+            // 
+            // clickMeToo7
+            // 
+            this.clickMeToo7.AutoSize = true;
+            this.clickMeToo7.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo7.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo7.Location = new System.Drawing.Point(320, 121);
+            this.clickMeToo7.Name = "clickMeToo7";
+            this.clickMeToo7.Size = new System.Drawing.Size(84, 15);
+            this.clickMeToo7.TabIndex = 42;
+            this.clickMeToo7.TabStop = true;
+            this.clickMeToo7.Text = "Marital Status:";
+            this.clickMeToo7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo7_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -394,6 +415,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(515, 469);
+            this.Controls.Add(this.clickMeToo7);
+            this.Controls.Add(this.clickMeToo6);
+            this.Controls.Add(this.clickMeToo5);
+            this.Controls.Add(this.clickMeToo4);
+            this.Controls.Add(this.clickMeToo3);
+            this.Controls.Add(this.clickMeToo2);
             this.Controls.Add(this.typeKita16);
             this.Controls.Add(this.typeKita12);
             this.Controls.Add(this.typeKita9);
@@ -401,9 +428,7 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.typeKita6);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.typeKita5);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.clickMeToo1);
             this.Controls.Add(this.label12);
@@ -425,10 +450,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.clickMe1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -443,10 +464,6 @@
         #endregion
 
         private Button clickMe1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
@@ -468,9 +485,7 @@
         private Label label12;
         private LinkLabel clickMeToo1;
         private Label label13;
-        private Label label14;
         private TextBox typeKita5;
-        private Label label15;
         private TextBox typeKita6;
         private Label label16;
         private Label label18;
@@ -478,5 +493,11 @@
         private TextBox typeKita9;
         private TextBox typeKita12;
         private TextBox typeKita16;
+        private LinkLabel clickMeToo2;
+        private LinkLabel clickMeToo3;
+        private LinkLabel clickMeToo4;
+        private LinkLabel clickMeToo5;
+        private LinkLabel clickMeToo6;
+        private LinkLabel clickMeToo7;
     }
 }
