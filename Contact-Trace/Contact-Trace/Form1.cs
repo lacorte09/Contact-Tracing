@@ -30,10 +30,49 @@ namespace Contact_Trace
         {
             counter++;
 
-            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\FullName.txt", true);
-            fullname.WriteLine("Contact No." + counter + ":" + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text);
+            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt", true);
+            fullname.WriteLine(counter + ". " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text);
             fullname.Close();
-            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\WholeForm.txt", true);
+            StreamWriter age = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingAgeOnly.txt", true);
+            age.WriteLine(counter + ". " + typeKita4.Text);
+            age.Close();
+            StreamWriter gender = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingGenderOnly.txt", true);
+            gender.WriteLine(counter + ". " + typeKita5.Text);
+            gender.Close();
+            StreamWriter maritalstatus = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingMaritalStatusOnly.txt", true);
+            maritalstatus.WriteLine(counter + ". " + typeKita6.Text);
+            maritalstatus.Close();
+            StreamWriter cellphone = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCellphoneNo.Only.txt", true);
+            cellphone.WriteLine(counter + ". " + typeKita7.Text);
+            cellphone.Close();
+            StreamWriter email = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingEmailOnly.txt", true);
+            email.WriteLine(counter + ". " + typeKita8.Text);
+            email.Close();
+            StreamWriter country = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCountryOnly.txt", true);
+            country.WriteLine(counter + ". " + typeKita9.Text);
+            country.Close();
+            StreamWriter region = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingRegionOnly.txt", true);
+            region.WriteLine(counter + ". " + typeKita10.Text);
+            region.Close();
+            StreamWriter city = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCityOnly.txt", true);
+            city.WriteLine(counter + ". " + typeKita11.Text);
+            city.Close();   
+            StreamWriter zip = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingZipCodeOnly.txt", true);
+            zip.WriteLine(counter + ". " + typeKita12.Text);
+            zip.Close();    
+            StreamWriter province = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingProvinceOnly.txt", true);
+            province.WriteLine(counter + ". " + typeKita13.Text);
+            province.Close();
+            StreamWriter barangay = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt", true);
+            barangay.WriteLine(counter + ". " + typeKita14.Text);
+            barangay.Close();
+            StreamWriter nationality = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingNationalityOnly.txt", true);
+            nationality.WriteLine(counter + ". " + typeKita15.Text);
+            nationality.Close();
+            StreamWriter religion = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingReligionOnly.txt", true);
+            religion.WriteLine(counter + ". " + typeKita16);
+            religion.Close();
+            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
             whole.WriteLine("-------" + "Contact No." + counter + "-------");
             whole.WriteLine("First Name: " + typeKita1.Text);
             whole.WriteLine("Middle Name: " + typeKita2.Text);
@@ -59,7 +98,7 @@ namespace Contact_Trace
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracing.txt");
+            StreamReader reader = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine();
@@ -75,6 +114,11 @@ namespace Contact_Trace
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             //napindot po
+        }
+
+        private void typeKita5_TextChanged(object sender, EventArgs e)
+        {
+            //napindot po 
         }
     }
 }

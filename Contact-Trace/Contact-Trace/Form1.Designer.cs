@@ -313,10 +313,11 @@
             // 
             // typeKita5
             // 
-            this.typeKita5.Location = new System.Drawing.Point(194, 114);
+            this.typeKita5.Location = new System.Drawing.Point(194, 118);
             this.typeKita5.Name = "typeKita5";
             this.typeKita5.Size = new System.Drawing.Size(88, 23);
             this.typeKita5.TabIndex = 27;
+            this.typeKita5.TextChanged += new System.EventHandler(this.typeKita5_TextChanged);
             // 
             // label15
             // 
