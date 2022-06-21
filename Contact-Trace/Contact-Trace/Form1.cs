@@ -9,52 +9,59 @@ namespace Contact_Trace
         int counter = 0;
         public void reset()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox7.Text = "";
-            textBox8.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
-            textBox12.Text = "";
-            textBox13.Text = "";
-            textBox14.Text = "";
-            textBox15.Text = "";
-            textBox16.Text = "";
+            typeKita1.Text = "";
+            typeKita2.Text = "";
+            typeKita3.Text = "";
+            typeKita4.Text = "";
+            typeKita7.Text = "";
+            typeKita8.Text = "";
+            typeKita15.Text = "";
+            typeKita11.Text = "";
+            typeKita14.Text = "";
+            typeKita13.Text = "";
+            typeKita10.Text = "";
+            typeKita5.Text = "";
+            typeKita6.Text = "";
+            typeKita9.Text = "";
+            typeKita12.Text = "";
+            typeKita16.Text = "";
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt", true);
+            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\FullName.txt", true);
+            fullname.WriteLine("First Name: " + typeKita1.Text);
+            fullname.WriteLine("Middle Name: " + typeKita2.Text);
+            fullname.WriteLine("Last name: " + typeKita3.Text);
+            fullname.Close();
+
+            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\WholeForm.txt", true);
             counter++;
-            file.WriteLine("-------" + "Contact No." + counter + "-------");
-            file.WriteLine("First Name: " + textBox1.Text);
-            file.WriteLine("Middle Name: " + textBox2.Text);
-            file.WriteLine("Age: " + textBox4.Text);
-            file.WriteLine("Gender: " + textBox12.Text);
-            file.WriteLine("Marital Status: " + textBox13.Text);
-            file.WriteLine("Contact No.: " + textBox5.Text);
-            file.WriteLine("Email: " + textBox6.Text);
-            file.WriteLine("Country: " + textBox14.Text);
-            file.WriteLine("Zip Code: " + textBox15.Text);
-            file.WriteLine("Region: " + textBox11.Text);
-            file.WriteLine("Province: " + textBox10.Text);
-            file.WriteLine("City: " + textBox8.Text);
-            file.WriteLine("Barangay: " + textBox9.Text);
-            file.WriteLine("Nationality: " + textBox7.Text);
-            file.WriteLine("Religion: " + textBox16.Text);
-            file.WriteLine("-------" + "End of Contact No." + counter + "-------");
-            file.Close();
+            whole.WriteLine("-------" + "Contact No." + counter + "-------");
+            whole.WriteLine("First Name: " + typeKita1.Text);
+            whole.WriteLine("Middle Name: " + typeKita2.Text);
+            whole.WriteLine("Last name: " + typeKita3.Text);
+            whole.WriteLine("Age: " + typeKita4.Text);
+            whole.WriteLine("Gender: " + typeKita5.Text);
+            whole.WriteLine("Marital Status: " + typeKita6.Text);
+            whole.WriteLine("Contact No.: " + typeKita7.Text);
+            whole.WriteLine("Email: " + typeKita8.Text);
+            whole.WriteLine("Country: " + typeKita9.Text);
+            whole.WriteLine("Zip Code: " + typeKita12.Text);
+            whole.WriteLine("Region: " + typeKita10.Text);
+            whole.WriteLine("Province: " + typeKita13.Text);
+            whole.WriteLine("City: " + typeKita11.Text);
+            whole.WriteLine("Barangay: " + typeKita14.Text);
+            whole.WriteLine("Nationality: " + typeKita15.Text);
+            whole.WriteLine("Religion: " + typeKita16.Text);
+            whole.WriteLine("-------" + "End of Contact No." + counter + "-------");
+            whole.Close();
             MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
             reset();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            StreamReader reader = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracing.txt");
+            StreamReader reader = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracing.txt");
             while (!reader.EndOfStream)
             {
                 String line = reader.ReadLine();

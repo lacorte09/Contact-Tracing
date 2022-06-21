@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.clickMe1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,43 +40,43 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.typeKita1 = new System.Windows.Forms.TextBox();
+            this.typeKita2 = new System.Windows.Forms.TextBox();
+            this.typeKita3 = new System.Windows.Forms.TextBox();
+            this.typeKita4 = new System.Windows.Forms.TextBox();
+            this.typeKita7 = new System.Windows.Forms.TextBox();
+            this.typeKita8 = new System.Windows.Forms.TextBox();
+            this.typeKita15 = new System.Windows.Forms.TextBox();
+            this.typeKita11 = new System.Windows.Forms.TextBox();
+            this.typeKita14 = new System.Windows.Forms.TextBox();
+            this.typeKita13 = new System.Windows.Forms.TextBox();
+            this.typeKita10 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo1 = new System.Windows.Forms.LinkLabel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.typeKita5 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.typeKita6 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.typeKita9 = new System.Windows.Forms.TextBox();
+            this.typeKita12 = new System.Windows.Forms.TextBox();
+            this.typeKita16 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // clickMe1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(209, 408);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.clickMe1.BackColor = System.Drawing.Color.Transparent;
+            this.clickMe1.Location = new System.Drawing.Point(209, 408);
+            this.clickMe1.Name = "clickMe1";
+            this.clickMe1.Size = new System.Drawing.Size(75, 23);
+            this.clickMe1.TabIndex = 0;
+            this.clickMe1.Text = "Submit";
+            this.clickMe1.UseVisualStyleBackColor = false;
+            this.clickMe1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -179,83 +179,83 @@
             this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 10;
             // 
-            // textBox1
+            // typeKita1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 23);
-            this.textBox1.TabIndex = 11;
+            this.typeKita1.Location = new System.Drawing.Point(12, 49);
+            this.typeKita1.Name = "typeKita1";
+            this.typeKita1.Size = new System.Drawing.Size(144, 23);
+            this.typeKita1.TabIndex = 11;
             // 
-            // textBox2
+            // typeKita2
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 23);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.typeKita2.Location = new System.Drawing.Point(180, 49);
+            this.typeKita2.Name = "typeKita2";
+            this.typeKita2.Size = new System.Drawing.Size(144, 23);
+            this.typeKita2.TabIndex = 12;
+            this.typeKita2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // typeKita3
             // 
-            this.textBox3.Location = new System.Drawing.Point(350, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 23);
-            this.textBox3.TabIndex = 13;
+            this.typeKita3.Location = new System.Drawing.Point(350, 49);
+            this.typeKita3.Name = "typeKita3";
+            this.typeKita3.Size = new System.Drawing.Size(144, 23);
+            this.typeKita3.TabIndex = 13;
             // 
-            // textBox4
+            // typeKita4
             // 
-            this.textBox4.Location = new System.Drawing.Point(49, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(47, 23);
-            this.textBox4.TabIndex = 14;
+            this.typeKita4.Location = new System.Drawing.Point(49, 118);
+            this.typeKita4.Name = "typeKita4";
+            this.typeKita4.Size = new System.Drawing.Size(47, 23);
+            this.typeKita4.TabIndex = 14;
             // 
-            // textBox5
+            // typeKita7
             // 
-            this.textBox5.Location = new System.Drawing.Point(91, 164);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 23);
-            this.textBox5.TabIndex = 15;
+            this.typeKita7.Location = new System.Drawing.Point(91, 164);
+            this.typeKita7.Name = "typeKita7";
+            this.typeKita7.Size = new System.Drawing.Size(144, 23);
+            this.typeKita7.TabIndex = 15;
             // 
-            // textBox6
+            // typeKita8
             // 
-            this.textBox6.Location = new System.Drawing.Point(350, 164);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(144, 23);
-            this.textBox6.TabIndex = 16;
+            this.typeKita8.Location = new System.Drawing.Point(350, 164);
+            this.typeKita8.Name = "typeKita8";
+            this.typeKita8.Size = new System.Drawing.Size(144, 23);
+            this.typeKita8.TabIndex = 16;
             // 
-            // textBox7
+            // typeKita15
             // 
-            this.textBox7.Location = new System.Drawing.Point(91, 331);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(403, 23);
-            this.textBox7.TabIndex = 17;
+            this.typeKita15.Location = new System.Drawing.Point(91, 331);
+            this.typeKita15.Name = "typeKita15";
+            this.typeKita15.Size = new System.Drawing.Size(403, 23);
+            this.typeKita15.TabIndex = 17;
             // 
-            // textBox8
+            // typeKita11
             // 
-            this.textBox8.Location = new System.Drawing.Point(91, 275);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(144, 23);
-            this.textBox8.TabIndex = 18;
+            this.typeKita11.Location = new System.Drawing.Point(91, 275);
+            this.typeKita11.Name = "typeKita11";
+            this.typeKita11.Size = new System.Drawing.Size(144, 23);
+            this.typeKita11.TabIndex = 18;
             // 
-            // textBox9
+            // typeKita14
             // 
-            this.textBox9.Location = new System.Drawing.Point(350, 270);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 23);
-            this.textBox9.TabIndex = 19;
+            this.typeKita14.Location = new System.Drawing.Point(350, 270);
+            this.typeKita14.Name = "typeKita14";
+            this.typeKita14.Size = new System.Drawing.Size(144, 23);
+            this.typeKita14.TabIndex = 19;
             // 
-            // textBox10
+            // typeKita13
             // 
-            this.textBox10.Location = new System.Drawing.Point(350, 241);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(144, 23);
-            this.textBox10.TabIndex = 20;
+            this.typeKita13.Location = new System.Drawing.Point(350, 241);
+            this.typeKita13.Name = "typeKita13";
+            this.typeKita13.Size = new System.Drawing.Size(144, 23);
+            this.typeKita13.TabIndex = 20;
             // 
-            // textBox11
+            // typeKita10
             // 
-            this.textBox11.Location = new System.Drawing.Point(91, 241);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(144, 23);
-            this.textBox11.TabIndex = 21;
+            this.typeKita10.Location = new System.Drawing.Point(91, 241);
+            this.typeKita10.Name = "typeKita10";
+            this.typeKita10.Size = new System.Drawing.Size(144, 23);
+            this.typeKita10.TabIndex = 21;
             // 
             // label11
             // 
@@ -277,18 +277,18 @@
             this.label12.TabIndex = 23;
             this.label12.Text = "Nationality:";
             // 
-            // linkLabel1
+            // clickMeToo1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(214, 434);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(68, 15);
-            this.linkLabel1.TabIndex = 24;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "View Forms";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.clickMeToo1.AutoSize = true;
+            this.clickMeToo1.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo1.LinkColor = System.Drawing.Color.Black;
+            this.clickMeToo1.Location = new System.Drawing.Point(214, 434);
+            this.clickMeToo1.Name = "clickMeToo1";
+            this.clickMeToo1.Size = new System.Drawing.Size(68, 15);
+            this.clickMeToo1.TabIndex = 24;
+            this.clickMeToo1.TabStop = true;
+            this.clickMeToo1.Text = "View Forms";
+            this.clickMeToo1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label13
             // 
@@ -297,7 +297,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(132, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(264, 37);
+            this.label13.Size = new System.Drawing.Size(263, 37);
             this.label13.TabIndex = 25;
             this.label13.Text = "Personal Information";
             // 
@@ -311,12 +311,12 @@
             this.label14.TabIndex = 26;
             this.label14.Text = "Gender:";
             // 
-            // textBox12
+            // typeKita5
             // 
-            this.textBox12.Location = new System.Drawing.Point(194, 114);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(88, 23);
-            this.textBox12.TabIndex = 27;
+            this.typeKita5.Location = new System.Drawing.Point(194, 114);
+            this.typeKita5.Name = "typeKita5";
+            this.typeKita5.Size = new System.Drawing.Size(88, 23);
+            this.typeKita5.TabIndex = 27;
             // 
             // label15
             // 
@@ -328,12 +328,12 @@
             this.label15.TabIndex = 28;
             this.label15.Text = "Marital Status:";
             // 
-            // textBox13
+            // typeKita6
             // 
-            this.textBox13.Location = new System.Drawing.Point(406, 118);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(88, 23);
-            this.textBox13.TabIndex = 29;
+            this.typeKita6.Location = new System.Drawing.Point(406, 118);
+            this.typeKita6.Name = "typeKita6";
+            this.typeKita6.Size = new System.Drawing.Size(88, 23);
+            this.typeKita6.TabIndex = 29;
             // 
             // label16
             // 
@@ -365,26 +365,26 @@
             this.label19.TabIndex = 33;
             this.label19.Text = "Zip Code:";
             // 
-            // textBox14
+            // typeKita9
             // 
-            this.textBox14.Location = new System.Drawing.Point(91, 209);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(144, 23);
-            this.textBox14.TabIndex = 34;
+            this.typeKita9.Location = new System.Drawing.Point(91, 209);
+            this.typeKita9.Name = "typeKita9";
+            this.typeKita9.Size = new System.Drawing.Size(144, 23);
+            this.typeKita9.TabIndex = 34;
             // 
-            // textBox15
+            // typeKita12
             // 
-            this.textBox15.Location = new System.Drawing.Point(350, 209);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(144, 23);
-            this.textBox15.TabIndex = 35;
+            this.typeKita12.Location = new System.Drawing.Point(350, 209);
+            this.typeKita12.Name = "typeKita12";
+            this.typeKita12.Size = new System.Drawing.Size(144, 23);
+            this.typeKita12.TabIndex = 35;
             // 
-            // textBox16
+            // typeKita16
             // 
-            this.textBox16.Location = new System.Drawing.Point(91, 364);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(403, 23);
-            this.textBox16.TabIndex = 36;
+            this.typeKita16.Location = new System.Drawing.Point(91, 364);
+            this.typeKita16.Name = "typeKita16";
+            this.typeKita16.Size = new System.Drawing.Size(403, 23);
+            this.typeKita16.TabIndex = 36;
             // 
             // Form1
             // 
@@ -393,31 +393,31 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(515, 469);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.typeKita16);
+            this.Controls.Add(this.typeKita12);
+            this.Controls.Add(this.typeKita9);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.typeKita6);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.typeKita5);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.clickMeToo1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.typeKita10);
+            this.Controls.Add(this.typeKita13);
+            this.Controls.Add(this.typeKita14);
+            this.Controls.Add(this.typeKita11);
+            this.Controls.Add(this.typeKita15);
+            this.Controls.Add(this.typeKita8);
+            this.Controls.Add(this.typeKita7);
+            this.Controls.Add(this.typeKita4);
+            this.Controls.Add(this.typeKita3);
+            this.Controls.Add(this.typeKita2);
+            this.Controls.Add(this.typeKita1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -428,7 +428,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.clickMe1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -441,7 +441,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button clickMe1;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -452,30 +452,30 @@
         private Label label8;
         private Label label9;
         private Label label10;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
+        private TextBox typeKita1;
+        private TextBox typeKita2;
+        private TextBox typeKita3;
+        private TextBox typeKita4;
+        private TextBox typeKita7;
+        private TextBox typeKita8;
+        private TextBox typeKita15;
+        private TextBox typeKita11;
+        private TextBox typeKita14;
+        private TextBox typeKita13;
+        private TextBox typeKita10;
         private Label label11;
         private Label label12;
-        private LinkLabel linkLabel1;
+        private LinkLabel clickMeToo1;
         private Label label13;
         private Label label14;
-        private TextBox textBox12;
+        private TextBox typeKita5;
         private Label label15;
-        private TextBox textBox13;
+        private TextBox typeKita6;
         private Label label16;
         private Label label18;
         private Label label19;
-        private TextBox textBox14;
-        private TextBox textBox15;
-        private TextBox textBox16;
+        private TextBox typeKita9;
+        private TextBox typeKita12;
+        private TextBox typeKita16;
     }
 }
