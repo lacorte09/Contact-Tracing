@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.clickMe1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -65,6 +63,8 @@
             this.clickMeToo5 = new System.Windows.Forms.LinkLabel();
             this.clickMeToo6 = new System.Windows.Forms.LinkLabel();
             this.clickMeToo7 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo8 = new System.Windows.Forms.LinkLabel();
+            this.clickMeToo9 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // clickMe1
@@ -77,26 +77,6 @@
             this.clickMe1.Text = "Submit";
             this.clickMe1.UseVisualStyleBackColor = false;
             this.clickMe1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(12, 167);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Contact No.:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(305, 167);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 15);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Email:";
             // 
             // label7
             // 
@@ -408,6 +388,32 @@
             this.clickMeToo7.Text = "Marital Status:";
             this.clickMeToo7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo7_LinkClicked);
             // 
+            // clickMeToo8
+            // 
+            this.clickMeToo8.AutoSize = true;
+            this.clickMeToo8.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo8.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo8.Location = new System.Drawing.Point(4, 167);
+            this.clickMeToo8.Name = "clickMeToo8";
+            this.clickMeToo8.Size = new System.Drawing.Size(84, 15);
+            this.clickMeToo8.TabIndex = 43;
+            this.clickMeToo8.TabStop = true;
+            this.clickMeToo8.Text = "Cellphone No.:";
+            // 
+            // clickMeToo9
+            // 
+            this.clickMeToo9.AutoSize = true;
+            this.clickMeToo9.BackColor = System.Drawing.Color.Transparent;
+            this.clickMeToo9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.clickMeToo9.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clickMeToo9.Location = new System.Drawing.Point(308, 167);
+            this.clickMeToo9.Name = "clickMeToo9";
+            this.clickMeToo9.Size = new System.Drawing.Size(39, 15);
+            this.clickMeToo9.TabIndex = 44;
+            this.clickMeToo9.TabStop = true;
+            this.clickMeToo9.Text = "Email:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -415,6 +421,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(515, 469);
+            this.Controls.Add(this.clickMeToo9);
+            this.Controls.Add(this.clickMeToo8);
             this.Controls.Add(this.clickMeToo7);
             this.Controls.Add(this.clickMeToo6);
             this.Controls.Add(this.clickMeToo5);
@@ -448,8 +456,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.clickMe1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -464,8 +470,6 @@
         #endregion
 
         private Button clickMe1;
-        private Label label5;
-        private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
@@ -499,5 +503,7 @@
         private LinkLabel clickMeToo5;
         private LinkLabel clickMeToo6;
         private LinkLabel clickMeToo7;
+        private LinkLabel clickMeToo8;
+        private LinkLabel clickMeToo9;
     }
 }
