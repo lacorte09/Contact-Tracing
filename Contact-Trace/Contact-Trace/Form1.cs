@@ -7,6 +7,7 @@ namespace Contact_Trace
             InitializeComponent();
         }
         int counter = 0;
+        
         public void reset()
         {
             typeKita1.Text = "";
@@ -64,7 +65,6 @@ namespace Contact_Trace
             StreamWriter barangay = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt", true);
             barangay.WriteLine(counter + ". " + typeKita14.Text);
             barangay.Close();
-
             StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
             whole.WriteLine("-------" + "Contact No." + counter + "-------");
             whole.WriteLine("Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text);
@@ -83,25 +83,6 @@ namespace Contact_Trace
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             StreamReader whole = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
-                //{
-                //    String line;
-                //    while ((line = whole.ReadLine()) != null)
-                //    {
-                //        list.Add(line); // Add to list.
-                //        MessageBox.Show(line, "Personal Information"); // Write to console.
-                //    }    
-                //}
-                //while (!whole.EndOfStream)
-                //{
-                //    String line = whole.ReadLine();
-                //    String[] dividers = line.Split('\n');
-                //    foreach (var div in dividers)
-                //    {
-                //        MessageBox.Show(line + dividers);
-                //    }
-                //}
-                //whole.Close();
-
             String line = whole.ReadToEnd();
             MessageBox.Show(line, "Form");
             whole.Close();
