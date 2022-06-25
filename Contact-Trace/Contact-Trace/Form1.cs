@@ -96,12 +96,12 @@ namespace Contact_Trace
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //napindot po
+            //napindot po hehe
         }
 
         private void typeKita5_TextChanged(object sender, EventArgs e)
         {
-            //napindot po 
+            //napindot po hehe
         }
 
         private void clickMeToo2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
