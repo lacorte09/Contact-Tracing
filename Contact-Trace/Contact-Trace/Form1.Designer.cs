@@ -66,7 +66,8 @@
             // clickMe1
             // 
             this.clickMe1.BackColor = System.Drawing.Color.Transparent;
-            this.clickMe1.Location = new System.Drawing.Point(214, 337);
+            this.clickMe1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clickMe1.Location = new System.Drawing.Point(214, 361);
             this.clickMe1.Name = "clickMe1";
             this.clickMe1.Size = new System.Drawing.Size(75, 23);
             this.clickMe1.TabIndex = 0;
@@ -77,79 +78,93 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(29, 167);
+            this.label10.Location = new System.Drawing.Point(29, 191);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 10;
             // 
             // typeKita1
             // 
-            this.typeKita1.Location = new System.Drawing.Point(12, 49);
+            this.typeKita1.BackColor = System.Drawing.Color.White;
+            this.typeKita1.Location = new System.Drawing.Point(12, 73);
             this.typeKita1.Name = "typeKita1";
+            this.typeKita1.PlaceholderText = "Cristan Odillon";
             this.typeKita1.Size = new System.Drawing.Size(144, 23);
             this.typeKita1.TabIndex = 11;
+            this.typeKita1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // typeKita2
             // 
-            this.typeKita2.Location = new System.Drawing.Point(180, 49);
+            this.typeKita2.Location = new System.Drawing.Point(180, 73);
             this.typeKita2.Name = "typeKita2";
+            this.typeKita2.PlaceholderText = "Encarnacion";
             this.typeKita2.Size = new System.Drawing.Size(144, 23);
             this.typeKita2.TabIndex = 12;
+            this.typeKita2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.typeKita2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // typeKita3
             // 
-            this.typeKita3.Location = new System.Drawing.Point(350, 49);
+            this.typeKita3.Location = new System.Drawing.Point(350, 73);
             this.typeKita3.Name = "typeKita3";
+            this.typeKita3.PlaceholderText = "Lacorte";
             this.typeKita3.Size = new System.Drawing.Size(144, 23);
             this.typeKita3.TabIndex = 13;
+            this.typeKita3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // typeKita4
             // 
-            this.typeKita4.Location = new System.Drawing.Point(49, 118);
+            this.typeKita4.Location = new System.Drawing.Point(49, 142);
             this.typeKita4.Name = "typeKita4";
+            this.typeKita4.PlaceholderText = "18";
             this.typeKita4.Size = new System.Drawing.Size(47, 23);
             this.typeKita4.TabIndex = 14;
             // 
             // typeKita7
             // 
-            this.typeKita7.Location = new System.Drawing.Point(91, 164);
+            this.typeKita7.Location = new System.Drawing.Point(91, 188);
             this.typeKita7.Name = "typeKita7";
+            this.typeKita7.PlaceholderText = "+639489706444";
             this.typeKita7.Size = new System.Drawing.Size(144, 23);
             this.typeKita7.TabIndex = 15;
             // 
             // typeKita8
             // 
-            this.typeKita8.Location = new System.Drawing.Point(350, 164);
+            this.typeKita8.Location = new System.Drawing.Point(350, 188);
             this.typeKita8.Name = "typeKita8";
+            this.typeKita8.PlaceholderText = "xxx@gmail.com";
             this.typeKita8.Size = new System.Drawing.Size(144, 23);
             this.typeKita8.TabIndex = 16;
             // 
             // typeKita11
             // 
-            this.typeKita11.Location = new System.Drawing.Point(91, 275);
+            this.typeKita11.Location = new System.Drawing.Point(91, 299);
             this.typeKita11.Name = "typeKita11";
+            this.typeKita11.PlaceholderText = "Talisay";
             this.typeKita11.Size = new System.Drawing.Size(144, 23);
             this.typeKita11.TabIndex = 18;
             // 
             // typeKita14
             // 
-            this.typeKita14.Location = new System.Drawing.Point(350, 275);
+            this.typeKita14.Location = new System.Drawing.Point(350, 299);
             this.typeKita14.Name = "typeKita14";
+            this.typeKita14.PlaceholderText = "Buco";
             this.typeKita14.Size = new System.Drawing.Size(144, 23);
             this.typeKita14.TabIndex = 19;
             // 
             // typeKita13
             // 
-            this.typeKita13.Location = new System.Drawing.Point(350, 241);
+            this.typeKita13.Location = new System.Drawing.Point(350, 265);
             this.typeKita13.Name = "typeKita13";
+            this.typeKita13.PlaceholderText = "Batangas";
             this.typeKita13.Size = new System.Drawing.Size(144, 23);
             this.typeKita13.TabIndex = 20;
             // 
             // typeKita10
             // 
-            this.typeKita10.Location = new System.Drawing.Point(91, 241);
+            this.typeKita10.Location = new System.Drawing.Point(91, 265);
             this.typeKita10.Name = "typeKita10";
+            this.typeKita10.PlaceholderText = "4-A CALABARZON";
             this.typeKita10.Size = new System.Drawing.Size(144, 23);
             this.typeKita10.TabIndex = 21;
             // 
@@ -158,7 +173,7 @@
             this.clickMeToo1.AutoSize = true;
             this.clickMeToo1.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo1.LinkColor = System.Drawing.Color.Black;
-            this.clickMeToo1.Location = new System.Drawing.Point(214, 363);
+            this.clickMeToo1.Location = new System.Drawing.Point(217, 387);
             this.clickMeToo1.Name = "clickMeToo1";
             this.clickMeToo1.Size = new System.Drawing.Size(68, 15);
             this.clickMeToo1.TabIndex = 24;
@@ -171,7 +186,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(132, 9);
+            this.label13.Location = new System.Drawing.Point(125, 9);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(263, 37);
             this.label13.TabIndex = 25;
@@ -179,30 +194,34 @@
             // 
             // typeKita5
             // 
-            this.typeKita5.Location = new System.Drawing.Point(194, 118);
+            this.typeKita5.Location = new System.Drawing.Point(194, 142);
             this.typeKita5.Name = "typeKita5";
+            this.typeKita5.PlaceholderText = "Male";
             this.typeKita5.Size = new System.Drawing.Size(88, 23);
             this.typeKita5.TabIndex = 27;
             this.typeKita5.TextChanged += new System.EventHandler(this.typeKita5_TextChanged);
             // 
             // typeKita6
             // 
-            this.typeKita6.Location = new System.Drawing.Point(406, 118);
+            this.typeKita6.Location = new System.Drawing.Point(406, 142);
             this.typeKita6.Name = "typeKita6";
+            this.typeKita6.PlaceholderText = "Single";
             this.typeKita6.Size = new System.Drawing.Size(88, 23);
             this.typeKita6.TabIndex = 29;
             // 
             // typeKita9
             // 
-            this.typeKita9.Location = new System.Drawing.Point(91, 209);
+            this.typeKita9.Location = new System.Drawing.Point(91, 233);
             this.typeKita9.Name = "typeKita9";
+            this.typeKita9.PlaceholderText = "Philippines";
             this.typeKita9.Size = new System.Drawing.Size(144, 23);
             this.typeKita9.TabIndex = 34;
             // 
             // typeKita12
             // 
-            this.typeKita12.Location = new System.Drawing.Point(350, 209);
+            this.typeKita12.Location = new System.Drawing.Point(350, 233);
             this.typeKita12.Name = "typeKita12";
+            this.typeKita12.PlaceholderText = "4220";
             this.typeKita12.Size = new System.Drawing.Size(144, 23);
             this.typeKita12.TabIndex = 35;
             // 
@@ -212,7 +231,7 @@
             this.clickMeToo2.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo2.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo2.Location = new System.Drawing.Point(49, 75);
+            this.clickMeToo2.Location = new System.Drawing.Point(49, 99);
             this.clickMeToo2.Name = "clickMeToo2";
             this.clickMeToo2.Size = new System.Drawing.Size(72, 15);
             this.clickMeToo2.TabIndex = 37;
@@ -226,7 +245,7 @@
             this.clickMeToo3.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo3.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo3.Location = new System.Drawing.Point(209, 75);
+            this.clickMeToo3.Location = new System.Drawing.Point(209, 99);
             this.clickMeToo3.Name = "clickMeToo3";
             this.clickMeToo3.Size = new System.Drawing.Size(86, 15);
             this.clickMeToo3.TabIndex = 38;
@@ -240,7 +259,7 @@
             this.clickMeToo4.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo4.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo4.Location = new System.Drawing.Point(389, 75);
+            this.clickMeToo4.Location = new System.Drawing.Point(389, 99);
             this.clickMeToo4.Name = "clickMeToo4";
             this.clickMeToo4.Size = new System.Drawing.Size(72, 15);
             this.clickMeToo4.TabIndex = 39;
@@ -254,7 +273,7 @@
             this.clickMeToo5.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo5.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo5.Location = new System.Drawing.Point(17, 121);
+            this.clickMeToo5.Location = new System.Drawing.Point(17, 145);
             this.clickMeToo5.Name = "clickMeToo5";
             this.clickMeToo5.Size = new System.Drawing.Size(31, 15);
             this.clickMeToo5.TabIndex = 40;
@@ -268,7 +287,7 @@
             this.clickMeToo6.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo6.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo6.Location = new System.Drawing.Point(146, 121);
+            this.clickMeToo6.Location = new System.Drawing.Point(146, 145);
             this.clickMeToo6.Name = "clickMeToo6";
             this.clickMeToo6.Size = new System.Drawing.Size(48, 15);
             this.clickMeToo6.TabIndex = 41;
@@ -282,7 +301,7 @@
             this.clickMeToo7.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo7.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo7.Location = new System.Drawing.Point(320, 121);
+            this.clickMeToo7.Location = new System.Drawing.Point(320, 145);
             this.clickMeToo7.Name = "clickMeToo7";
             this.clickMeToo7.Size = new System.Drawing.Size(84, 15);
             this.clickMeToo7.TabIndex = 42;
@@ -296,7 +315,7 @@
             this.clickMeToo8.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo8.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo8.Location = new System.Drawing.Point(4, 167);
+            this.clickMeToo8.Location = new System.Drawing.Point(4, 191);
             this.clickMeToo8.Name = "clickMeToo8";
             this.clickMeToo8.Size = new System.Drawing.Size(84, 15);
             this.clickMeToo8.TabIndex = 43;
@@ -310,7 +329,7 @@
             this.clickMeToo9.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo9.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo9.Location = new System.Drawing.Point(308, 167);
+            this.clickMeToo9.Location = new System.Drawing.Point(308, 191);
             this.clickMeToo9.Name = "clickMeToo9";
             this.clickMeToo9.Size = new System.Drawing.Size(39, 15);
             this.clickMeToo9.TabIndex = 44;
@@ -324,7 +343,7 @@
             this.clickMeToo10.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo10.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo10.Location = new System.Drawing.Point(37, 212);
+            this.clickMeToo10.Location = new System.Drawing.Point(37, 236);
             this.clickMeToo10.Name = "clickMeToo10";
             this.clickMeToo10.Size = new System.Drawing.Size(52, 15);
             this.clickMeToo10.TabIndex = 45;
@@ -338,7 +357,7 @@
             this.clickMeToo11.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo11.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo11.Location = new System.Drawing.Point(43, 244);
+            this.clickMeToo11.Location = new System.Drawing.Point(43, 268);
             this.clickMeToo11.Name = "clickMeToo11";
             this.clickMeToo11.Size = new System.Drawing.Size(46, 15);
             this.clickMeToo11.TabIndex = 46;
@@ -352,7 +371,7 @@
             this.clickMeToo12.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo12.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo12.Location = new System.Drawing.Point(57, 278);
+            this.clickMeToo12.Location = new System.Drawing.Point(57, 302);
             this.clickMeToo12.Name = "clickMeToo12";
             this.clickMeToo12.Size = new System.Drawing.Size(31, 15);
             this.clickMeToo12.TabIndex = 47;
@@ -366,7 +385,7 @@
             this.clickMeToo13.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo13.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo13.Location = new System.Drawing.Point(291, 212);
+            this.clickMeToo13.Location = new System.Drawing.Point(291, 236);
             this.clickMeToo13.Name = "clickMeToo13";
             this.clickMeToo13.Size = new System.Drawing.Size(57, 15);
             this.clickMeToo13.TabIndex = 48;
@@ -380,7 +399,7 @@
             this.clickMeToo14.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo14.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo14.Location = new System.Drawing.Point(294, 244);
+            this.clickMeToo14.Location = new System.Drawing.Point(294, 268);
             this.clickMeToo14.Name = "clickMeToo14";
             this.clickMeToo14.Size = new System.Drawing.Size(54, 15);
             this.clickMeToo14.TabIndex = 49;
@@ -394,7 +413,7 @@
             this.clickMeToo15.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.clickMeToo15.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.clickMeToo15.Location = new System.Drawing.Point(286, 278);
+            this.clickMeToo15.Location = new System.Drawing.Point(286, 302);
             this.clickMeToo15.Name = "clickMeToo15";
             this.clickMeToo15.Size = new System.Drawing.Size(62, 15);
             this.clickMeToo15.TabIndex = 50;
@@ -442,6 +461,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.clickMe1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
