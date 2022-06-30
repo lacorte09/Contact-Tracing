@@ -69,7 +69,7 @@
             // 
             this.clickMe1.BackColor = System.Drawing.Color.Transparent;
             this.clickMe1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe1.Location = new System.Drawing.Point(207, 433);
+            this.clickMe1.Location = new System.Drawing.Point(207, 459);
             this.clickMe1.Name = "clickMe1";
             this.clickMe1.Size = new System.Drawing.Size(75, 23);
             this.clickMe1.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.clickMeToo1.AutoSize = true;
             this.clickMeToo1.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo1.LinkColor = System.Drawing.Color.Black;
-            this.clickMeToo1.Location = new System.Drawing.Point(214, 459);
+            this.clickMeToo1.Location = new System.Drawing.Point(214, 485);
             this.clickMeToo1.Name = "clickMeToo1";
             this.clickMeToo1.Size = new System.Drawing.Size(68, 15);
             this.clickMeToo1.TabIndex = 24;
@@ -425,9 +425,10 @@
             // 
             // picMe1
             // 
-            this.picMe1.Location = new System.Drawing.Point(17, 343);
+            this.picMe1.BackColor = System.Drawing.Color.Transparent;
+            this.picMe1.Location = new System.Drawing.Point(194, 340);
             this.picMe1.Name = "picMe1";
-            this.picMe1.Size = new System.Drawing.Size(153, 128);
+            this.picMe1.Size = new System.Drawing.Size(119, 113);
             this.picMe1.TabIndex = 52;
             this.picMe1.TabStop = false;
             this.picMe1.Click += new System.EventHandler(this.picMe1_Click);
@@ -438,7 +439,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(515, 483);
+            this.ClientSize = new System.Drawing.Size(515, 537);
             this.Controls.Add(this.picMe1);
             this.Controls.Add(this.clickMeToo15);
             this.Controls.Add(this.clickMeToo14);
