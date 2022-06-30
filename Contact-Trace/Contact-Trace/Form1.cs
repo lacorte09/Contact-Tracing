@@ -1,3 +1,5 @@
+using QRCoder;
+
 namespace Contact_Trace
 {
     public partial class Form1 : Form
@@ -28,43 +30,57 @@ namespace Contact_Trace
         private void button1_Click(object sender, EventArgs e)
         {
             counter++;
-            StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt", true);
+            String forms = "-------" + "Contact No." + counter + "-------" + "\n" +
+            "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
+            "Age: " + typeKita4.Text + "\n" +
+            "Gender: " + typeKita5.Text + "\n" +
+            "Marital Status: " + typeKita6.Text + "\n" +
+            "Cellphone No.: " + typeKita7.Text + "\n" +
+            "Email: " + typeKita8.Text + "\n" +
+            "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text + "\n" +
+            "Date and Time Filled: " + DateTime.Now + "\n" +
+            "-------" + "End of Contact No." + counter + "-------";
+            QRCodeGenerator qrfname = new QRCodeGenerator();
+            QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
+            QRCode qRCode = new QRCode(data);
+            picMe1.Image = qRCode.GetGraphic(1);
+            StreamWriter fullname = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt", true);
             fullname.WriteLine("Contact No." + counter + ": " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + " " + "(" + DateTime.Now + ")");
             fullname.Close();
-            StreamWriter age = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingAgeOnly.txt", true);
+            StreamWriter age = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingAgeOnly.txt", true);
             age.WriteLine("Contact No." + counter + ": " + typeKita4.Text + " " + "(" + DateTime.Now + ")");
             age.Close();
-            StreamWriter gender = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingGenderOnly.txt", true);
+            StreamWriter gender = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingGenderOnly.txt", true);
             gender.WriteLine("Contact No." + counter + ": " + typeKita5.Text + " " + "(" + DateTime.Now + ")");
             gender.Close();
-            StreamWriter maritalstatus = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingMaritalStatusOnly.txt", true);
+            StreamWriter maritalstatus = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingMaritalStatusOnly.txt", true);
             maritalstatus.WriteLine("Contact No." + counter + ": " + typeKita6.Text + " " + "(" + DateTime.Now + ")");
             maritalstatus.Close();
-            StreamWriter cellphone = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCellphoneNo.Only.txt", true);
+            StreamWriter cellphone = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCellphoneNo.Only.txt", true);
             cellphone.WriteLine("Contact No." + counter + ": " + typeKita7.Text + " " + "(" + DateTime.Now + ")");
             cellphone.Close();
-            StreamWriter email = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingEmailOnly.txt", true);
+            StreamWriter email = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingEmailOnly.txt", true);
             email.WriteLine("Contact No." + counter + ": " + typeKita8.Text + " " + "(" + DateTime.Now + ")");
             email.Close();
-            StreamWriter country = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCountryOnly.txt", true);
+            StreamWriter country = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCountryOnly.txt", true);
             country.WriteLine("Contact No." + counter + ": " + typeKita9.Text + " " + "(" + DateTime.Now + ")");
             country.Close();
-            StreamWriter region = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingRegionOnly.txt", true);
+            StreamWriter region = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingRegionOnly.txt", true);
             region.WriteLine("Contact No." + counter + ": " + typeKita10.Text + " " + "(" + DateTime.Now + ")");
             region.Close();
-            StreamWriter city = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCityOnly.txt", true);
+            StreamWriter city = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCityOnly.txt", true);
             city.WriteLine("Contact No." + counter + ": " + typeKita11.Text + " " + "(" + DateTime.Now + ")");
             city.Close();
-            StreamWriter zip = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingZipCodeOnly.txt", true);
+            StreamWriter zip = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingZipCodeOnly.txt", true);
             zip.WriteLine("Contact No." + counter + ": " + typeKita12.Text + " " + "(" + DateTime.Now + ")");
             zip.Close();
-            StreamWriter province = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingProvinceOnly.txt", true);
+            StreamWriter province = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingProvinceOnly.txt", true);
             province.WriteLine("Contact No." + counter + ": " + typeKita13.Text + " " + "(" + DateTime.Now + ")");
             province.Close();
-            StreamWriter barangay = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt", true);
+            StreamWriter barangay = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt", true);
             barangay.WriteLine("Contact No." + counter + ": " + typeKita14.Text + " " + "(" + DateTime.Now + ")");
             barangay.Close();
-            StreamWriter whole = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
+            StreamWriter whole = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
             whole.WriteLine("-------" + "Contact No." + counter + "-------");
             whole.WriteLine("Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text);
             whole.WriteLine("Age: " + typeKita4.Text);
@@ -76,7 +92,7 @@ namespace Contact_Trace
             whole.WriteLine("Date and Time Filled: " + DateTime.Now);
             whole.WriteLine("-------" + "End of Contact No." + counter + "-------");
             whole.Close();
-            MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
+            //MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
             reset();
         }
 
@@ -84,7 +100,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader whole = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
+                StreamReader whole = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
                 String line = whole.ReadToEnd();
                 MessageBox.Show(line, "Form");
                 whole.Close();
@@ -108,7 +124,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader fullname = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
+                StreamReader fullname = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
                 String line = fullname.ReadToEnd();
                 MessageBox.Show(line, " List of Contact's Full Name");
                 fullname.Close();
@@ -124,7 +140,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader fullname = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
+                StreamReader fullname = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
                 String line = fullname.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Full Name");
                 fullname.Close();
@@ -139,7 +155,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader fullname = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
+                StreamReader fullname = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt");
                 String line = fullname.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Full Name");
                 fullname.Close();
@@ -153,7 +169,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader age = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingAgeOnly.txt");
+                StreamReader age = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingAgeOnly.txt");
                 String line = age.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Age");
                 age.Close();
@@ -168,7 +184,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader gender = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingGenderOnly.txt");
+                StreamReader gender = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingGenderOnly.txt");
                 String line = gender.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Gender");
                 gender.Close();
@@ -183,7 +199,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader maritalstatus = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingMaritalStatusOnly.txt");
+                StreamReader maritalstatus = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingMaritalStatusOnly.txt");
                 String line = maritalstatus.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Marital Status");
                 maritalstatus.Close();
@@ -199,7 +215,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader cellphone = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCellphoneNo.Only.txt");
+                StreamReader cellphone = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCellphoneNo.Only.txt");
                 String line = cellphone.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Cellphone No.");
                 cellphone.Close();
@@ -214,7 +230,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader email = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingEmailOnly.txt");
+                StreamReader email = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingEmailOnly.txt");
                 String line = email.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Email");
                 email.Close();
@@ -230,7 +246,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader country = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCountryOnly.txt");
+                StreamReader country = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCountryOnly.txt");
                 String line = country.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Country");
                 country.Close();
@@ -245,7 +261,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader region = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingRegionOnly.txt");
+                StreamReader region = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingRegionOnly.txt");
                 String line = region.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Region");
                 region.Close();
@@ -260,7 +276,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader city = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingCityOnly.txt");
+                StreamReader city = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingCityOnly.txt");
                 String line = city.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's City");
                 city.Close();
@@ -275,7 +291,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader zipcode = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingZipCodeOnly.txt");
+                StreamReader zipcode = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingZipCodeOnly.txt");
                 String line = zipcode.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Zip Code");
                 zipcode.Close();
@@ -290,7 +306,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader province = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingProvinceOnly.txt");
+                StreamReader province = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingProvinceOnly.txt");
                 String line = province.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Province");
                 province.Close();
@@ -305,7 +321,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader barangay = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt");
+                StreamReader barangay = new StreamReader(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingBarangayOnly.txt");
                 String line = barangay.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Barangay");
                 barangay.Close();
@@ -314,6 +330,11 @@ namespace Contact_Trace
             {
                 MessageBox.Show("No Forms Yet", "Error");
             }
+        }
+
+        private void picMe1_Click(object sender, EventArgs e)
+        {
+            //napindot po
         }
     }
 

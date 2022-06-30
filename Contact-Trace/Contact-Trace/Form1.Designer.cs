@@ -61,13 +61,15 @@
             this.clickMeToo13 = new System.Windows.Forms.LinkLabel();
             this.clickMeToo14 = new System.Windows.Forms.LinkLabel();
             this.clickMeToo15 = new System.Windows.Forms.LinkLabel();
+            this.picMe1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picMe1)).BeginInit();
             this.SuspendLayout();
             // 
             // clickMe1
             // 
             this.clickMe1.BackColor = System.Drawing.Color.Transparent;
             this.clickMe1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe1.Location = new System.Drawing.Point(214, 361);
+            this.clickMe1.Location = new System.Drawing.Point(207, 433);
             this.clickMe1.Name = "clickMe1";
             this.clickMe1.Size = new System.Drawing.Size(75, 23);
             this.clickMe1.TabIndex = 0;
@@ -173,7 +175,7 @@
             this.clickMeToo1.AutoSize = true;
             this.clickMeToo1.BackColor = System.Drawing.Color.Transparent;
             this.clickMeToo1.LinkColor = System.Drawing.Color.Black;
-            this.clickMeToo1.Location = new System.Drawing.Point(217, 387);
+            this.clickMeToo1.Location = new System.Drawing.Point(214, 459);
             this.clickMeToo1.Name = "clickMeToo1";
             this.clickMeToo1.Size = new System.Drawing.Size(68, 15);
             this.clickMeToo1.TabIndex = 24;
@@ -188,7 +190,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(125, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(263, 37);
+            this.label13.Size = new System.Drawing.Size(264, 37);
             this.label13.TabIndex = 25;
             this.label13.Text = "Personal Information";
             // 
@@ -421,13 +423,23 @@
             this.clickMeToo15.Text = "Barangay:";
             this.clickMeToo15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.clickMeToo15_LinkClicked);
             // 
+            // picMe1
+            // 
+            this.picMe1.Location = new System.Drawing.Point(17, 343);
+            this.picMe1.Name = "picMe1";
+            this.picMe1.Size = new System.Drawing.Size(153, 128);
+            this.picMe1.TabIndex = 52;
+            this.picMe1.TabStop = false;
+            this.picMe1.Click += new System.EventHandler(this.picMe1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(515, 417);
+            this.ClientSize = new System.Drawing.Size(515, 483);
+            this.Controls.Add(this.picMe1);
             this.Controls.Add(this.clickMeToo15);
             this.Controls.Add(this.clickMeToo14);
             this.Controls.Add(this.clickMeToo13);
@@ -466,6 +478,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
+            ((System.ComponentModel.ISupportInitialize)(this.picMe1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -505,5 +518,6 @@
         private LinkLabel clickMeToo13;
         private LinkLabel clickMeToo14;
         private LinkLabel clickMeToo15;
+        private PictureBox picMe1;
     }
 }

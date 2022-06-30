@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "q1o8t6vTZzciNXqfubrY3u69FqVWs1jyD2+DVKplwkJqzKlQlpjQUqx6dHAFySvZU89nVXRDtKBxlh0sW71S/A==",
+  "dgSpecHash": "O9otu1/NZ/HZ9AhIV3s3x7zlfuj9UvWaRsEhE6VZwps+k/M5eGazTvMqAFfKT58BXTiwjHkb53RbQryIRBT5eg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dillon\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\dillon\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\dillon\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
