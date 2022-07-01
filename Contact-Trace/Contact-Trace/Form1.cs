@@ -1,4 +1,7 @@
 using QRCoder;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using IronBarCode;
 
 namespace Contact_Trace
 {
@@ -9,6 +12,8 @@ namespace Contact_Trace
             InitializeComponent();
         }
         int counter = 0;
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
         
         public void reset()
         {
@@ -107,16 +112,6 @@ namespace Contact_Trace
                 MessageBox.Show("No Forms Yet", "Error");
             }
         }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            //napindot po hehe
-        }
-
-        private void typeKita5_TextChanged(object sender, EventArgs e)
-        {
-            //napindot po hehe
-        }
-
         private void clickMeToo2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             try
@@ -329,9 +324,52 @@ namespace Contact_Trace
             }
         }
 
-        private void picMe1_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            //napindot po
+            BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode(picMe1.Image, BarcodeEncoding.QRCode);
+            typeKita15.Text = barcodeResult.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+                myCam1.Items.Add(filterInfo.Name);
+            myCam1.SelectedIndex = 0;
+        }
+
+        private void clickMe3_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[myCam1.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            picMe1.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode(picMe1.Image);
+            //typeKita15.Text = barcodeResult.ToString();
+            //if (barcodeResult !=null)
+            //{
+            //    typeKita15.Text = barcodeResult.ToString();
+            //    timeIsGold1.Stop();
+            //}
+            //if (picMe1.Image != null)
+            //BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode
+            ////BarcodeReaderGeneric barcodeReader = new BarcodeReaderGeneric();
+            //Result result = barcodeReader.Decode((Bitmap)picMe1.Image);
+
         }
     }
 

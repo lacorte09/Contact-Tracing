@@ -40,6 +40,18 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "AForge.Video": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "AForge.Video.DirectShow": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "BarCode": {
+              "target": "Package",
+              "version": "[2022.5.5918, )"
+            },
             "QRCoder": {
               "target": "Package",
               "version": "[1.4.3, )"

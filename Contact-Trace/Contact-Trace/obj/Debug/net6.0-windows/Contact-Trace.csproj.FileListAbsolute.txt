@@ -36,3 +36,7 @@ C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.
 C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\ref\Contact-Trace.dll
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\QRCoder.dll
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\Contact-Trace.csproj.CopyComplete
+C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\IronBarCode.dll
