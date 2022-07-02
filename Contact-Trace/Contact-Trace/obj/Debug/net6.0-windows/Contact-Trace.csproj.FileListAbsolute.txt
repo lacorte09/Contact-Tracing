@@ -40,3 +40,9 @@ C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.dll
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\dillon\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\IronBarCode.dll
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\obj\Debug\net6.0-windows\Contact-Trace.csproj.CopyComplete
+C:\Users\valen\O-O-P\Contact-Tracing\Contact-Trace\Contact-Trace\bin\Debug\net6.0-windows\zxing.dll

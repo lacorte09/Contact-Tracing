@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.clickMe1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,6 +69,8 @@
             this.typeKita15 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.clickMe3 = new System.Windows.Forms.Button();
+            this.clickMe4 = new System.Windows.Forms.Button();
+            this.timeIsGold1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,7 +198,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(125, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(264, 37);
+            this.label13.Size = new System.Drawing.Size(263, 37);
             this.label13.TabIndex = 25;
             this.label13.Text = "Personal Information";
             // 
@@ -440,7 +443,7 @@
             // myCam1
             // 
             this.myCam1.FormattingEnabled = true;
-            this.myCam1.Location = new System.Drawing.Point(92, 356);
+            this.myCam1.Location = new System.Drawing.Point(91, 361);
             this.myCam1.Name = "myCam1";
             this.myCam1.Size = new System.Drawing.Size(83, 23);
             this.myCam1.TabIndex = 52;
@@ -460,9 +463,9 @@
             // picMe1
             // 
             this.picMe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMe1.Location = new System.Drawing.Point(43, 386);
+            this.picMe1.Location = new System.Drawing.Point(559, 28);
             this.picMe1.Name = "picMe1";
-            this.picMe1.Size = new System.Drawing.Size(131, 125);
+            this.picMe1.Size = new System.Drawing.Size(618, 497);
             this.picMe1.TabIndex = 54;
             this.picMe1.TabStop = false;
             // 
@@ -489,13 +492,29 @@
             // 
             this.clickMe3.BackColor = System.Drawing.Color.Transparent;
             this.clickMe3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe3.Location = new System.Drawing.Point(70, 517);
+            this.clickMe3.Location = new System.Drawing.Point(738, 531);
             this.clickMe3.Name = "clickMe3";
-            this.clickMe3.Size = new System.Drawing.Size(74, 23);
+            this.clickMe3.Size = new System.Drawing.Size(65, 23);
             this.clickMe3.TabIndex = 57;
             this.clickMe3.Text = "Scan";
             this.clickMe3.UseVisualStyleBackColor = false;
             this.clickMe3.Click += new System.EventHandler(this.clickMe3_Click);
+            // 
+            // clickMe4
+            // 
+            this.clickMe4.BackColor = System.Drawing.Color.Transparent;
+            this.clickMe4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clickMe4.Location = new System.Drawing.Point(572, 531);
+            this.clickMe4.Name = "clickMe4";
+            this.clickMe4.Size = new System.Drawing.Size(60, 23);
+            this.clickMe4.TabIndex = 58;
+            this.clickMe4.Text = "Start";
+            this.clickMe4.UseVisualStyleBackColor = false;
+            this.clickMe4.Click += new System.EventHandler(this.clickMe4_Click);
+            // 
+            // timeIsGold1
+            // 
+            this.timeIsGold1.Tick += new System.EventHandler(this.timeIsGold1_Tick);
             // 
             // Form1
             // 
@@ -503,7 +522,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(515, 544);
+            this.ClientSize = new System.Drawing.Size(1256, 690);
+            this.Controls.Add(this.clickMe4);
             this.Controls.Add(this.clickMe3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.typeKita15);
@@ -598,5 +618,7 @@
         private TextBox typeKita15;
         private Label label2;
         private Button clickMe3;
+        private Button clickMe4;
+        private System.Windows.Forms.Timer timeIsGold1;
     }
 }

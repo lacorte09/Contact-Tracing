@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj": {}
+    "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj": {
+    "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
+        "projectUniqueName": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
         "projectName": "Contact-Trace",
-        "projectPath": "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
-        "packagesPath": "C:\\Users\\dillon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\obj\\",
+        "projectPath": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
+        "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dillon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,13 +48,13 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
-            "BarCode": {
-              "target": "Package",
-              "version": "[2022.5.5918, )"
-            },
             "QRCoder": {
               "target": "Package",
               "version": "[1.4.3, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.5, )"
             }
           },
           "imports": [
@@ -75,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

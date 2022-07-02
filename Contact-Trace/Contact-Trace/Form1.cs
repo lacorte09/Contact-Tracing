@@ -1,7 +1,6 @@
-using QRCoder;
 using AForge.Video;
 using AForge.Video.DirectShow;
-using IronBarCode;
+using ZXing;
 
 namespace Contact_Trace
 {
@@ -35,17 +34,17 @@ namespace Contact_Trace
         private void button1_Click(object sender, EventArgs e)
         {
             counter++;
-            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
-            "Age: " + typeKita4.Text + "\n" +
-            "Gender: " + typeKita5.Text + "\n" +
-            "Marital Status: " + typeKita6.Text + "\n" +
-            "Cellphone No.: " + typeKita7.Text + "\n" +
-            "Email: " + typeKita8.Text + "\n" +
-            "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
-            QRCodeGenerator qrfname = new QRCodeGenerator();
-            QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
-            QRCode qRCode = new QRCode(data);
-            picMe1.Image = qRCode.GetGraphic(2);
+            //String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
+            //"Age: " + typeKita4.Text + "\n" +
+            //"Gender: " + typeKita5.Text + "\n" +
+            //"Marital Status: " + typeKita6.Text + "\n" +
+            //"Cellphone No.: " + typeKita7.Text + "\n" +
+            //"Email: " + typeKita8.Text + "\n" +
+            //"Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
+            //QRCodeGenerator qrfname = new QRCodeGenerator();
+            //QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
+            //QRCode qRCode = new QRCode(data);
+            //picMe1.Image = qRCode.GetGraphic(2);
             StreamWriter fullname = new StreamWriter(@"C:\Users\dillon\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt", true);
             fullname.WriteLine("Contact No." + counter + ": " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + " " + "(" + DateTime.Now + ")");
             fullname.Close();
@@ -327,8 +326,8 @@ namespace Contact_Trace
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode(picMe1.Image, BarcodeEncoding.QRCode);
-            typeKita15.Text = barcodeResult.ToString();
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -341,35 +340,41 @@ namespace Contact_Trace
 
         private void clickMe3_Click(object sender, EventArgs e)
         {
-            captureDevice = new VideoCaptureDevice(filterInfoCollection[myCam1.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += CaptureDevice_NewFrame;
-            captureDevice.Start();
+            //BarcodeResult Result = IronBarCode.BarcodeReader.ReadASingleBarcode(picMe1.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, BarcodeReader.BarcodeRotationCorrection.High, BarcodeReader.BarcodeImageCorrection.MediumCleanPixels);
+            //typeKita15.Text = Result.ToString();
+           
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            picMe1.Image = (Bitmap)eventArgs.Frame.Clone();
+            picMe1.Image = eventArgs.Frame.Clone() as Bitmap;
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //
+            
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void clickMe4_Click(object sender, EventArgs e)
         {
-            //BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode(picMe1.Image);
-            //typeKita15.Text = barcodeResult.ToString();
-            //if (barcodeResult !=null)
-            //{
-            //    typeKita15.Text = barcodeResult.ToString();
-            //    timeIsGold1.Stop();
-            //}
-            //if (picMe1.Image != null)
-            //BarcodeResult barcodeResult = BarcodeReader.QuicklyReadOneBarcode
-            ////BarcodeReaderGeneric barcodeReader = new BarcodeReaderGeneric();
-            //Result result = barcodeReader.Decode((Bitmap)picMe1.Image);
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[myCam1.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+            timeIsGold1.Start();
+        }
 
+        private void timeIsGold1_Tick(object sender, EventArgs e)
+        {
+            if(picMe1.Image !=null)
+            {
+                BarcodeReader Reader = new BarcodeReader();
+                Result result = Reader.Decode((Bitmap)picMe1.Image);
+                if (result != null)
+                {
+                    typeKita15.Text = result.ToString();
+                    timeIsGold1.Stop();
+                }
+            }
         }
     }
 

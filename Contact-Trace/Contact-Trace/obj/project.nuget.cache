@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "byKNbsrqCus2qzUsgU1WqOSFCR9QrRxuIuYXS8pZFmMNkJfaXza96v/dsrhRkLgfmb1k1YuQakXxNQBepcAkSQ==",
+  "dgSpecHash": "qqStRlT6kLBDYCA1uU/v9fPxRBH6akN9yfsZWqPMCp1VZBmw3TJHevxiCWf0K55zdAgcO1kA5C1CYXYSWZ0Q1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dillon\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
+  "projectFilePath": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dillon\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\barcode\\2022.5.5918\\barcode.2022.5.5918.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
-    "C:\\Users\\dillon\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+    "C:\\Users\\valen\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\zxing.net\\0.16.5\\zxing.net.0.16.5.nupkg.sha512"
   ],
   "logs": [
     {

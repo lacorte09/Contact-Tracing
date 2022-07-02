@@ -10,8 +10,8 @@
         "dependencies": {
           "AForge.Video": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
-          "BarCode": "2022.5.5918",
-          "QRCoder": "1.4.3"
+          "QRCoder": "1.4.3",
+          "ZXing.Net": "0.16.8"
         },
         "runtime": {
           "Contact-Trace.dll": {}
@@ -47,17 +47,6 @@
           }
         }
       },
-      "BarCode/2022.5.5918": {
-        "dependencies": {
-          "System.Drawing.Common": "6.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronBarCode.dll": {
-            "assemblyVersion": "2022.5.0.5918",
-            "fileVersion": "2022.5.0.5918"
-          }
-        }
-      },
       "Microsoft.Win32.SystemEvents/6.0.0": {},
       "QRCoder/1.4.3": {
         "dependencies": {
@@ -73,6 +62,14 @@
       "System.Drawing.Common/6.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "6.0.0"
+        }
+      },
+      "ZXing.Net/0.16.8": {
+        "runtime": {
+          "lib/net6.0/zxing.dll": {
+            "assemblyVersion": "0.16.8.0",
+            "fileVersion": "0.16.8.0"
+          }
         }
       }
     }
@@ -104,13 +101,6 @@
       "path": "aforge.video.directshow/2.2.5",
       "hashPath": "aforge.video.directshow.2.2.5.nupkg.sha512"
     },
-    "BarCode/2022.5.5918": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9TpKBc5E+q/kErKUJexE1SmQ9qjRt8U86lLBPvjAyn+bglsAH1LGkMnbhNXvSbFmgmk/oULjMIAd7mtBs+b4Iw==",
-      "path": "barcode/2022.5.5918",
-      "hashPath": "barcode.2022.5.5918.nupkg.sha512"
-    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -131,6 +121,13 @@
       "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cbbe+x7I7E+VJ0VxU1fPc7AktIw/9xea/ZY/fh38sXqTQ75LJp9ooGUjpzFqfpPfIKozAoXgJ4yvY4GzKpPBzQ==",
+      "path": "zxing.net/0.16.8",
+      "hashPath": "zxing.net.0.16.8.nupkg.sha512"
     }
   }
 }
