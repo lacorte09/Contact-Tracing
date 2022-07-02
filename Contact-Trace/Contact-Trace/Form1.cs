@@ -1,6 +1,8 @@
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using ZXing.QrCode;
+using System.Drawing;
 
 namespace Contact_Trace
 {
@@ -340,9 +342,13 @@ namespace Contact_Trace
 
         private void clickMe3_Click(object sender, EventArgs e)
         {
+            var qrcodebitmap = (Bitmap)Bitmap.FromFile(@"C:\Users\valen\O-O-P\Contact-Tracing\tan.png");
+            var qrcodeReader = new BarcodeReader();
+            var qrcodeResult = qrcodeReader.Decode(qrcodebitmap);
+            typeKita15.Text = qrcodeResult.ToString();
             //BarcodeResult Result = IronBarCode.BarcodeReader.ReadASingleBarcode(picMe1.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, BarcodeReader.BarcodeRotationCorrection.High, BarcodeReader.BarcodeImageCorrection.MediumCleanPixels);
             //typeKita15.Text = Result.ToString();
-           
+
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -352,7 +358,8 @@ namespace Contact_Trace
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
         }
 
         private void clickMe4_Click(object sender, EventArgs e)
@@ -365,17 +372,19 @@ namespace Contact_Trace
 
         private void timeIsGold1_Tick(object sender, EventArgs e)
         {
-            if(picMe1.Image !=null)
-            {
-                BarcodeReader Reader = new BarcodeReader();
-                Result result = Reader.Decode((Bitmap)picMe1.Image);
-                if (result != null)
-                {
-                    typeKita15.Text = result.ToString();
-                    timeIsGold1.Stop();
-                }
-            }
+            //var qrcodebitmap = (Bitmap)Bitmap.FromFile()
+            //if(picMe1.Image !=null)
+            //{
+            //    BarcodeReader barcodeReader = new BarcodeReader();
+            //    Result result = barcodeReader.
+            //    if (result != null)
+            //    {
+            //        typeKita15.Text = result.ToString();
+            //        timeIsGold1.Stop();
+            //        if (captureDevice.IsRunning)
+            //            captureDevice.Stop();
+            //    }
+            //}
         }
     }
-
 }

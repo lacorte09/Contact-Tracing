@@ -71,7 +71,9 @@
             this.clickMe3 = new System.Windows.Forms.Button();
             this.clickMe4 = new System.Windows.Forms.Button();
             this.timeIsGold1 = new System.Windows.Forms.Timer(this.components);
+            this.picMe2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMe2)).BeginInit();
             this.SuspendLayout();
             // 
             // clickMe1
@@ -465,7 +467,7 @@
             this.picMe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picMe1.Location = new System.Drawing.Point(559, 28);
             this.picMe1.Name = "picMe1";
-            this.picMe1.Size = new System.Drawing.Size(618, 497);
+            this.picMe1.Size = new System.Drawing.Size(288, 272);
             this.picMe1.TabIndex = 54;
             this.picMe1.TabStop = false;
             // 
@@ -516,6 +518,15 @@
             // 
             this.timeIsGold1.Tick += new System.EventHandler(this.timeIsGold1_Tick);
             // 
+            // picMe2
+            // 
+            this.picMe2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picMe2.Location = new System.Drawing.Point(867, 28);
+            this.picMe2.Name = "picMe2";
+            this.picMe2.Size = new System.Drawing.Size(288, 272);
+            this.picMe2.TabIndex = 59;
+            this.picMe2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -523,6 +534,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1256, 690);
+            this.Controls.Add(this.picMe2);
             this.Controls.Add(this.clickMe4);
             this.Controls.Add(this.clickMe3);
             this.Controls.Add(this.label2);
@@ -572,6 +584,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMe2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,5 +633,6 @@
         private Button clickMe3;
         private Button clickMe4;
         private System.Windows.Forms.Timer timeIsGold1;
+        private PictureBox picMe2;
     }
 }
