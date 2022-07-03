@@ -13,8 +13,8 @@ namespace Contact_Trace
             InitializeComponent();
         }
         int counter = 0;
-        FilterInfoCollection filterInfoCollection;
-        VideoCaptureDevice captureDevice;
+        FilterInfoCollection collectMe;
+        VideoCaptureDevice captureMe;
         
         public void reset()
         {
@@ -32,21 +32,22 @@ namespace Contact_Trace
             typeKita12.Text = "";
             typeKita13.Text = "";
             typeKita14.Text = "";
+            typeKita15.Text = "";
         }
         private void button1_Click(object sender, EventArgs e)
         {
             counter++;
-            //String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
-            //"Age: " + typeKita4.Text + "\n" +
-            //"Gender: " + typeKita5.Text + "\n" +
-            //"Marital Status: " + typeKita6.Text + "\n" +
-            //"Cellphone No.: " + typeKita7.Text + "\n" +
-            //"Email: " + typeKita8.Text + "\n" +
-            //"Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
-            //QRCodeGenerator qrfname = new QRCodeGenerator();
-            //QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
-            //QRCode qRCode = new QRCode(data);
-            //picMe1.Image = qRCode.GetGraphic(2);
+            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
+            "Age: " + typeKita4.Text + "\n" +
+            "Gender: " + typeKita5.Text + "\n" +
+            "Marital Status: " + typeKita6.Text + "\n" +
+            "Cellphone No.: " + typeKita7.Text + "\n" +
+            "Email: " + typeKita8.Text + "\n" +
+            "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
+            QRCodeGenerator qrfname = new QRCodeGenerator();
+            QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
+            QRCode qRCode = new QRCode(data);
+            picMe3.Image = qRCode.GetGraphic(2);
             StreamWriter fullname = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingFullNameOnly.txt", true);
             fullname.WriteLine("Contact No." + counter + ": " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + " " + "(" + DateTime.Now + ")");
             fullname.Close();
@@ -95,7 +96,7 @@ namespace Contact_Trace
             whole.WriteLine("Date and Time Filled: " + DateTime.Now);
             whole.WriteLine("-------" + "End of Contact No." + counter + "-------");
             whole.Close();
-            //MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
+            MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
             reset();
         }
 
@@ -346,8 +347,8 @@ namespace Contact_Trace
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo filterInfo in filterInfoCollection)
+            collectMe = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in collectMe)
                 myCam1.Items.Add(filterInfo.Name);
             myCam1.SelectedIndex = 0;
         }
@@ -364,18 +365,24 @@ namespace Contact_Trace
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //if (captureDevice.IsRunning==true)
-            //{
-            //    captureDevice.Stop();
-            //}
-            //Application.Exit(null);
+            
         }
 
         private void clickMe4_Click(object sender, EventArgs e)
         {
-            captureDevice = new VideoCaptureDevice(filterInfoCollection[myCam1.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += CaptureDevice_NewFrame;
-            captureDevice.Start();
+            captureMe= new VideoCaptureDevice(collectMe[myCam1.SelectedIndex].MonikerString);
+            captureMe.NewFrame += CaptureDevice_NewFrame;
+            captureMe.Start();
+        }
+
+        private void clickMe5_Click(object sender, EventArgs e)
+        {
+            counter++;
+            StreamWriter qrscan = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingQRScanned.txt", true);
+            qrscan.WriteLine("-------" + "Contact No." + counter + "-------" + "\n" + typeKita15.Text + " " + "\n" + "Date and Time Filled: " + DateTime.Now + "\n" + "-------" + "End of Contact No." + counter + "-------");
+            qrscan.Close();
+            MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
+            reset();
         }
     }
 }
