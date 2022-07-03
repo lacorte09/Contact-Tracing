@@ -1,7 +1,6 @@
 using AForge.Video;
 using AForge.Video.DirectShow;
-using ZXing;
-using ZXing.QrCode;
+using IronBarCode;
 using System.Drawing;
 
 namespace Contact_Trace
@@ -328,8 +327,9 @@ namespace Contact_Trace
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (captureDevice.IsRunning)
-                captureDevice.Stop();
+            BarcodeResult Result = BarcodeReader.QuicklyReadOneBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, true);
+            //BarcodeResult Result = IronBarCode.BarcodeReader.ReadASingleBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, BarcodeReader.BarcodeRotationCorrection.High, BarcodeReader.BarcodeImageCorrection.MediumCleanPixels);
+            typeKita15.Text = Result.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -342,10 +342,11 @@ namespace Contact_Trace
 
         private void clickMe3_Click(object sender, EventArgs e)
         {
-            var qrcodebitmap = (Bitmap)Bitmap.FromFile(@"C:\Users\valen\O-O-P\Contact-Tracing\tan.png");
-            var qrcodeReader = new BarcodeReader();
-            var qrcodeResult = qrcodeReader.Decode(qrcodebitmap);
-            typeKita15.Text = qrcodeResult.ToString();
+            picMe2.Image = (Bitmap)picMe1.Image.Clone();
+            //var qrcodebitmap = (Bitmap)Bitmap.FromFile(@"C:\Users\valen\O-O-P\Contact-Tracing\tan.png");
+            //var qrcodeReader = new BarcodeReader();
+            //var qrcodeResult = qrcodeReader.Decode(qrcodebitmap);
+            //typeKita15.Text = qrcodeResult.ToString();
             //BarcodeResult Result = IronBarCode.BarcodeReader.ReadASingleBarcode(picMe1.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, BarcodeReader.BarcodeRotationCorrection.High, BarcodeReader.BarcodeImageCorrection.MediumCleanPixels);
             //typeKita15.Text = Result.ToString();
 
@@ -358,8 +359,11 @@ namespace Contact_Trace
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (captureDevice.IsRunning)
+            if (captureDevice.IsRunning==true)
+            {
                 captureDevice.Stop();
+            }
+            Application.Exit(null);
         }
 
         private void clickMe4_Click(object sender, EventArgs e)
@@ -367,7 +371,7 @@ namespace Contact_Trace
             captureDevice = new VideoCaptureDevice(filterInfoCollection[myCam1.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
-            timeIsGold1.Start();
+            //timeIsGold1.Start();
         }
 
         private void timeIsGold1_Tick(object sender, EventArgs e)

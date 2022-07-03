@@ -494,7 +494,7 @@
             // 
             this.clickMe3.BackColor = System.Drawing.Color.Transparent;
             this.clickMe3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe3.Location = new System.Drawing.Point(738, 531);
+            this.clickMe3.Location = new System.Drawing.Point(740, 333);
             this.clickMe3.Name = "clickMe3";
             this.clickMe3.Size = new System.Drawing.Size(65, 23);
             this.clickMe3.TabIndex = 57;
@@ -506,7 +506,7 @@
             // 
             this.clickMe4.BackColor = System.Drawing.Color.Transparent;
             this.clickMe4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe4.Location = new System.Drawing.Point(572, 531);
+            this.clickMe4.Location = new System.Drawing.Point(614, 333);
             this.clickMe4.Name = "clickMe4";
             this.clickMe4.Size = new System.Drawing.Size(60, 23);
             this.clickMe4.TabIndex = 58;
@@ -516,7 +516,6 @@
             // 
             // timeIsGold1
             // 
-            this.timeIsGold1.Tick += new System.EventHandler(this.timeIsGold1_Tick);
             // 
             // picMe2
             // 

@@ -1,18 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "yoO63dhR1nFC43/+Q7an5oUMMzZ3xss608SFCZoqOTfH0drJ2hVZeSqNlxeL6QO5x+IyGia7VAjwVHiRgTGa9Q==",
+  "dgSpecHash": "mI2o2iNCqnZCKgQXjYvah/Ehko6miD7MUFNJePHS08G/MoGJbfr/xz4n+u8glH83qKZFSePvgzye50TCtzKAQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\valen\\O-O-P\\Contact-Tracing\\Contact-Trace\\Contact-Trace\\Contact-Trace.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valen\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\valen\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
     "C:\\Users\\valen\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\valen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\valen\\.nuget\\packages\\barcode\\2022.5.5918\\barcode.2022.5.5918.nupkg.sha512",
     "C:\\Users\\valen\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\valen\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\valen\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
-    "C:\\Users\\valen\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\valen\\.nuget\\packages\\zxing.net\\0.16.4\\zxing.net.0.16.4.nupkg.sha512"
+    "C:\\Users\\valen\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
   "logs": [
     {
