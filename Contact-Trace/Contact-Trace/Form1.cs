@@ -322,23 +322,23 @@ namespace Contact_Trace
             BarcodeResult result = BarcodeReader.QuicklyReadOneBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, true);
             if (result != null)
             {
-                var resultData = result.Text.Split(new char[] { '\n' });
-                if (resultData.Length == 14)
+                var qrResult = result.Text.Split(new char[] { '\n' , ',' });
+                if (qrResult.Length == 14)
                 {
-                    typeKita1.Text = resultData[0];
-                    typeKita2.Text = resultData[1];
-                    typeKita3.Text = resultData[2];
-                    typeKita4.Text = resultData[3];
-                    typeKita5.Text = resultData[4];
-                    typeKita6.Text = resultData[5];
-                    typeKita7.Text = resultData[6];
-                    typeKita8.Text = resultData[7];
-                    typeKita9.Text = resultData[12];
-                    typeKita10.Text = resultData[11];
-                    typeKita11.Text = resultData[9];
-                    typeKita12.Text = resultData[13];
-                    typeKita13.Text = resultData[10];
-                    typeKita14.Text = resultData[8];
+                    typeKita1.Text = qrResult[0];
+                    typeKita2.Text = qrResult[1];
+                    typeKita3.Text = qrResult[2];
+                    typeKita4.Text = qrResult[3];
+                    typeKita5.Text = qrResult[4];
+                    typeKita6.Text = qrResult[5];
+                    typeKita7.Text = qrResult[6];
+                    typeKita8.Text = qrResult[7];
+                    typeKita9.Text = qrResult[12];
+                    typeKita10.Text = qrResult[11];
+                    typeKita11.Text = qrResult[9];
+                    typeKita12.Text = qrResult[13];
+                    typeKita13.Text = qrResult[10];
+                    typeKita14.Text = qrResult[8];
                 }
             }
             else
