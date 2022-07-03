@@ -1,7 +1,6 @@
 using AForge.Video;
 using AForge.Video.DirectShow;
 using IronBarCode;
-using System.Drawing;
 using QRCoder;
 
 namespace Contact_Trace
