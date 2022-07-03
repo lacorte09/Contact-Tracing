@@ -473,6 +473,7 @@
             this.picMe1.Location = new System.Drawing.Point(537, 45);
             this.picMe1.Name = "picMe1";
             this.picMe1.Size = new System.Drawing.Size(235, 207);
+            this.picMe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe1.TabIndex = 54;
             this.picMe1.TabStop = false;
             // 
@@ -526,6 +527,7 @@
             this.picMe2.Location = new System.Drawing.Point(793, 45);
             this.picMe2.Name = "picMe2";
             this.picMe2.Size = new System.Drawing.Size(235, 206);
+            this.picMe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe2.TabIndex = 59;
             this.picMe2.TabStop = false;
             // 
@@ -547,6 +549,7 @@
             this.picMe3.Location = new System.Drawing.Point(175, 350);
             this.picMe3.Name = "picMe3";
             this.picMe3.Size = new System.Drawing.Size(149, 128);
+            this.picMe3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe3.TabIndex = 61;
             this.picMe3.TabStop = false;
             // 
@@ -555,11 +558,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(155, 481);
+            this.label4.Location = new System.Drawing.Point(125, 481);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 37);
+            this.label4.Size = new System.Drawing.Size(254, 37);
             this.label4.TabIndex = 62;
-            this.label4.Text = "Your QR Code";
+            this.label4.Text = "Generated QR Code";
             // 
             // clickMe5
             // 

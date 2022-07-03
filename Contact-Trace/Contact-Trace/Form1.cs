@@ -372,7 +372,7 @@ namespace Contact_Trace
             {
                 StreamReader qrscan = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
                 String line = qrscan.ReadToEnd();
-                MessageBox.Show(line, "List of Contact's Scanned QR Form");
+                MessageBox.Show(line, "List of Contact's Form");
                 qrscan.Close();
             }
             catch (Exception)
