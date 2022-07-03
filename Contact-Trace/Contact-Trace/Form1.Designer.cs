@@ -65,16 +65,12 @@
             this.myCam1 = new System.Windows.Forms.ComboBox();
             this.clickMe2 = new System.Windows.Forms.Button();
             this.picMe1 = new System.Windows.Forms.PictureBox();
-            this.typeKita15 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.clickMe3 = new System.Windows.Forms.Button();
             this.clickMe4 = new System.Windows.Forms.Button();
             this.picMe2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.picMe3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.clickMe5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMe2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMe3)).BeginInit();
@@ -440,7 +436,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(537, 257);
+            this.label1.Location = new System.Drawing.Point(214, 525);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 51;
@@ -449,16 +445,16 @@
             // myCam1
             // 
             this.myCam1.FormattingEnabled = true;
-            this.myCam1.Location = new System.Drawing.Point(591, 254);
+            this.myCam1.Location = new System.Drawing.Point(268, 522);
             this.myCam1.Name = "myCam1";
-            this.myCam1.Size = new System.Drawing.Size(119, 23);
+            this.myCam1.Size = new System.Drawing.Size(102, 23);
             this.myCam1.TabIndex = 52;
             // 
             // clickMe2
             // 
             this.clickMe2.BackColor = System.Drawing.Color.Transparent;
             this.clickMe2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe2.Location = new System.Drawing.Point(862, 257);
+            this.clickMe2.Location = new System.Drawing.Point(406, 532);
             this.clickMe2.Name = "clickMe2";
             this.clickMe2.Size = new System.Drawing.Size(97, 41);
             this.clickMe2.TabIndex = 53;
@@ -470,39 +466,20 @@
             // 
             this.picMe1.BackColor = System.Drawing.Color.Transparent;
             this.picMe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMe1.Location = new System.Drawing.Point(537, 45);
+            this.picMe1.Location = new System.Drawing.Point(214, 368);
             this.picMe1.Name = "picMe1";
-            this.picMe1.Size = new System.Drawing.Size(235, 207);
+            this.picMe1.Size = new System.Drawing.Size(156, 153);
             this.picMe1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe1.TabIndex = 54;
             this.picMe1.TabStop = false;
-            // 
-            // typeKita15
-            // 
-            this.typeKita15.Location = new System.Drawing.Point(533, 350);
-            this.typeKita15.Multiline = true;
-            this.typeKita15.Name = "typeKita15";
-            this.typeKita15.Size = new System.Drawing.Size(495, 146);
-            this.typeKita15.TabIndex = 55;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(689, 323);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 25);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "Scanned QR Code";
             // 
             // clickMe3
             // 
             this.clickMe3.BackColor = System.Drawing.Color.Transparent;
             this.clickMe3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe3.Location = new System.Drawing.Point(603, 283);
+            this.clickMe3.Location = new System.Drawing.Point(308, 550);
             this.clickMe3.Name = "clickMe3";
-            this.clickMe3.Size = new System.Drawing.Size(97, 41);
+            this.clickMe3.Size = new System.Drawing.Size(62, 23);
             this.clickMe3.TabIndex = 57;
             this.clickMe3.Text = "Capture Photo";
             this.clickMe3.UseVisualStyleBackColor = false;
@@ -512,7 +489,7 @@
             // 
             this.clickMe4.BackColor = System.Drawing.Color.Transparent;
             this.clickMe4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe4.Location = new System.Drawing.Point(716, 254);
+            this.clickMe4.Location = new System.Drawing.Point(214, 551);
             this.clickMe4.Name = "clickMe4";
             this.clickMe4.Size = new System.Drawing.Size(56, 22);
             this.clickMe4.TabIndex = 58;
@@ -524,9 +501,9 @@
             // 
             this.picMe2.BackColor = System.Drawing.Color.Transparent;
             this.picMe2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMe2.Location = new System.Drawing.Point(793, 45);
+            this.picMe2.Location = new System.Drawing.Point(376, 368);
             this.picMe2.Name = "picMe2";
-            this.picMe2.Size = new System.Drawing.Size(235, 206);
+            this.picMe2.Size = new System.Drawing.Size(156, 153);
             this.picMe2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe2.TabIndex = 59;
             this.picMe2.TabStop = false;
@@ -535,10 +512,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(673, 0);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(286, 340);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 37);
+            this.label3.Size = new System.Drawing.Size(159, 25);
             this.label3.TabIndex = 60;
             this.label3.Text = "QR Code Scanner";
             // 
@@ -546,9 +523,9 @@
             // 
             this.picMe3.BackColor = System.Drawing.Color.Transparent;
             this.picMe3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMe3.Location = new System.Drawing.Point(175, 350);
+            this.picMe3.Location = new System.Drawing.Point(17, 368);
             this.picMe3.Name = "picMe3";
-            this.picMe3.Size = new System.Drawing.Size(149, 128);
+            this.picMe3.Size = new System.Drawing.Size(177, 172);
             this.picMe3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picMe3.TabIndex = 61;
             this.picMe3.TabStop = false;
@@ -557,36 +534,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(125, 481);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(17, 340);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(254, 37);
+            this.label4.Size = new System.Drawing.Size(179, 25);
             this.label4.TabIndex = 62;
             this.label4.Text = "Generated QR Code";
-            // 
-            // clickMe5
-            // 
-            this.clickMe5.BackColor = System.Drawing.Color.Transparent;
-            this.clickMe5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe5.Location = new System.Drawing.Point(603, 499);
-            this.clickMe5.Name = "clickMe5";
-            this.clickMe5.Size = new System.Drawing.Size(97, 41);
-            this.clickMe5.TabIndex = 63;
-            this.clickMe5.Text = "Submit Scanned Code";
-            this.clickMe5.UseVisualStyleBackColor = false;
-            this.clickMe5.Click += new System.EventHandler(this.clickMe5_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(862, 499);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 41);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "View Scanned Code";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Form1
             // 
@@ -594,17 +547,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1050, 552);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.clickMe5);
+            this.ClientSize = new System.Drawing.Size(552, 587);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.picMe3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.picMe2);
             this.Controls.Add(this.clickMe4);
             this.Controls.Add(this.clickMe3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.typeKita15);
             this.Controls.Add(this.picMe1);
             this.Controls.Add(this.clickMe2);
             this.Controls.Add(this.myCam1);
@@ -694,15 +643,11 @@
         private ComboBox myCam1;
         private Button clickMe2;
         private PictureBox picMe1;
-        private TextBox typeKita15;
-        private Label label2;
         private Button clickMe3;
         private Button clickMe4;
         private PictureBox picMe2;
         private Label label3;
         private PictureBox picMe3;
         private Label label4;
-        private Button clickMe5;
-        private Button button1;
     }
 }

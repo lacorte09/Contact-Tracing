@@ -31,12 +31,11 @@ namespace Contact_Trace
             typeKita12.Text = "";
             typeKita13.Text = "";
             typeKita14.Text = "";
-            typeKita15.Text = "";
         }
         private void button1_Click(object sender, EventArgs e)
         {
             counter++;
-            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +"Age: " + typeKita4.Text + "\n" + "Gender: " + typeKita5.Text + "\n" + "Marital Status: " + typeKita6.Text + "\n" + "Cellphone No.: " + typeKita7.Text + "\n" + "Email: " + typeKita8.Text + "\n" + "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
+            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" + "Age: " + typeKita4.Text + "\n" + "Gender: " + typeKita5.Text + "\n" + "Marital Status: " + typeKita6.Text + "\n" + "Cellphone No.: " + typeKita7.Text + "\n" + "Email: " + typeKita8.Text + "\n" + "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text; 
             QRCodeGenerator qrfname = new QRCodeGenerator();
             QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
             QRCode qRCode = new QRCode(data);
@@ -323,12 +322,29 @@ namespace Contact_Trace
             BarcodeResult result = BarcodeReader.QuicklyReadOneBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, true);
             if (result != null)
             {
-                typeKita15.Text = result.ToString();
+                var resultData = result.Text.Split(new char[] { '\n' });
+                if (resultData.Length == 14)
+                {
+                    typeKita1.Text = resultData[0];
+                    typeKita2.Text = resultData[1];
+                    typeKita3.Text = resultData[2];
+                    typeKita4.Text = resultData[3];
+                    typeKita5.Text = resultData[4];
+                    typeKita6.Text = resultData[5];
+                    typeKita7.Text = resultData[6];
+                    typeKita8.Text = resultData[7];
+                    typeKita9.Text = resultData[12];
+                    typeKita10.Text = resultData[11];
+                    typeKita11.Text = resultData[9];
+                    typeKita12.Text = resultData[13];
+                    typeKita13.Text = resultData[10];
+                    typeKita14.Text = resultData[8];
+                }
             }
             else
             {
                 MessageBox.Show("Can't Read QR Code", "Please Try Again");
-            }            
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -356,29 +372,5 @@ namespace Contact_Trace
             captureMe.Start();
         }
 
-        private void clickMe5_Click(object sender, EventArgs e)
-        {
-            counter++;
-            StreamWriter qrscan = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
-            qrscan.WriteLine("-------" + "Contact No." + counter + "-------" + "\n" + typeKita15.Text + " " + "\n" + "Date and Time Filled: " + DateTime.Now + "\n" + "-------" + "End of Contact No." + counter + "-------");
-            qrscan.Close();
-            MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
-            reset();
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            try
-            {
-                StreamReader qrscan = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
-                String line = qrscan.ReadToEnd();
-                MessageBox.Show(line, "List of Contact's Form");
-                qrscan.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("No Scanned Codes Yet", "Error");
-            }
-        }
     }
 }

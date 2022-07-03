@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Contact-Trace",
+    "\\Contact-Trace\\Contact-Trace"
   ],
-  "SelectedNode": "\\Contact-Trace.sln",
+  "SelectedNode": "\\Contact-Trace\\Contact-Trace.sln",
   "PreviewInSolutionExplorer": false
 }
