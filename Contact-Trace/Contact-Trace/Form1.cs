@@ -235,7 +235,6 @@ namespace Contact_Trace
             }
         }
     
-
         private void clickMeToo10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             try
@@ -326,23 +325,17 @@ namespace Contact_Trace
             }
         }
 
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            BarcodeResult Result = BarcodeReader.QuicklyReadOneBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, true);
-            if (Result != null)
+            BarcodeResult result = BarcodeReader.QuicklyReadOneBarcode(picMe2.Image, BarcodeEncoding.QRCode | BarcodeEncoding.Code128, true);
+            if (result != null)
             {
-                typeKita15.Text = Result.ToString();
+                typeKita15.Text = result.ToString();
             }
             else
             {
                 MessageBox.Show("Can't Read QR Code", "Please Try Again");
-            }
-            //typeKita15.Text = Result.ToString();
-            //if(Result != null)
-            //{
-            //    MessageBox.Show("Can't Read QR Code", "Please Try Again");
-            //}
+            }            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -363,11 +356,6 @@ namespace Contact_Trace
             picMe1.Image = eventArgs.Frame.Clone() as Bitmap;
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-
         private void clickMe4_Click(object sender, EventArgs e)
         {
             captureMe= new VideoCaptureDevice(collectMe[myCam1.SelectedIndex].MonikerString);
@@ -383,6 +371,21 @@ namespace Contact_Trace
             qrscan.Close();
             MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
             reset();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamReader qrscan = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingQRScanned.txt");
+                String line = qrscan.ReadToEnd();
+                MessageBox.Show(line, "List of Contact's Scanned QR Form");
+                qrscan.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No Scanned Codes Yet", "Error");
+            }
         }
     }
 }

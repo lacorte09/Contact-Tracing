@@ -76,6 +76,7 @@
             this.picMe3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.clickMe5 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMe2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMe3)).BeginInit();
@@ -469,6 +470,7 @@
             // 
             // picMe1
             // 
+            this.picMe1.BackColor = System.Drawing.Color.Transparent;
             this.picMe1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picMe1.Location = new System.Drawing.Point(537, 45);
             this.picMe1.Name = "picMe1";
@@ -521,6 +523,7 @@
             // 
             // picMe2
             // 
+            this.picMe2.BackColor = System.Drawing.Color.Transparent;
             this.picMe2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picMe2.Location = new System.Drawing.Point(793, 45);
             this.picMe2.Name = "picMe2";
@@ -564,13 +567,25 @@
             // 
             this.clickMe5.BackColor = System.Drawing.Color.Transparent;
             this.clickMe5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clickMe5.Location = new System.Drawing.Point(729, 502);
+            this.clickMe5.Location = new System.Drawing.Point(603, 499);
             this.clickMe5.Name = "clickMe5";
             this.clickMe5.Size = new System.Drawing.Size(97, 41);
             this.clickMe5.TabIndex = 63;
             this.clickMe5.Text = "Submit Scanned Code";
             this.clickMe5.UseVisualStyleBackColor = false;
             this.clickMe5.Click += new System.EventHandler(this.clickMe5_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(862, 499);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 41);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "View Scanned Code";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Form1
             // 
@@ -579,6 +594,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1050, 552);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.clickMe5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.picMe3);
@@ -630,7 +646,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picMe1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMe2)).EndInit();
@@ -688,5 +703,6 @@
         private PictureBox picMe3;
         private Label label4;
         private Button clickMe5;
+        private Button button1;
     }
 }
