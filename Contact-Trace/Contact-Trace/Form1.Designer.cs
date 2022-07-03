@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.clickMe1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -70,7 +69,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.clickMe3 = new System.Windows.Forms.Button();
             this.clickMe4 = new System.Windows.Forms.Button();
-            this.timeIsGold1 = new System.Windows.Forms.Timer(this.components);
             this.picMe2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.picMe3 = new System.Windows.Forms.PictureBox();
@@ -546,7 +544,7 @@
             // 
             this.picMe3.BackColor = System.Drawing.Color.Transparent;
             this.picMe3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMe3.Location = new System.Drawing.Point(175, 351);
+            this.picMe3.Location = new System.Drawing.Point(175, 350);
             this.picMe3.Name = "picMe3";
             this.picMe3.Size = new System.Drawing.Size(149, 128);
             this.picMe3.TabIndex = 61;
@@ -557,7 +555,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(162, 480);
+            this.label4.Location = new System.Drawing.Point(155, 481);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 37);
             this.label4.TabIndex = 62;
@@ -697,7 +695,6 @@
         private Label label2;
         private Button clickMe3;
         private Button clickMe4;
-        private System.Windows.Forms.Timer timeIsGold1;
         private PictureBox picMe2;
         private Label label3;
         private PictureBox picMe3;

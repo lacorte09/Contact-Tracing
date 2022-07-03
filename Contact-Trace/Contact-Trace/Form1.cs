@@ -36,13 +36,7 @@ namespace Contact_Trace
         private void button1_Click(object sender, EventArgs e)
         {
             counter++;
-            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +
-            "Age: " + typeKita4.Text + "\n" +
-            "Gender: " + typeKita5.Text + "\n" +
-            "Marital Status: " + typeKita6.Text + "\n" +
-            "Cellphone No.: " + typeKita7.Text + "\n" +
-            "Email: " + typeKita8.Text + "\n" +
-            "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
+            String forms = "Full Name: " + typeKita1.Text + " " + typeKita2.Text + " " + typeKita3.Text + "\n" +"Age: " + typeKita4.Text + "\n" + "Gender: " + typeKita5.Text + "\n" + "Marital Status: " + typeKita6.Text + "\n" + "Cellphone No.: " + typeKita7.Text + "\n" + "Email: " + typeKita8.Text + "\n" + "Location: " + typeKita14.Text + " " + typeKita11.Text + " " + typeKita13.Text + " " + typeKita10.Text + " " + typeKita9.Text + " " + typeKita12.Text;
             QRCodeGenerator qrfname = new QRCodeGenerator();
             QRCodeData data = qrfname.CreateQrCode(forms, QRCodeGenerator.ECCLevel.Q);
             QRCode qRCode = new QRCode(data);
@@ -365,7 +359,7 @@ namespace Contact_Trace
         private void clickMe5_Click(object sender, EventArgs e)
         {
             counter++;
-            StreamWriter qrscan = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingQRScanned.txt", true);
+            StreamWriter qrscan = new StreamWriter(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt", true);
             qrscan.WriteLine("-------" + "Contact No." + counter + "-------" + "\n" + typeKita15.Text + " " + "\n" + "Date and Time Filled: " + DateTime.Now + "\n" + "-------" + "End of Contact No." + counter + "-------");
             qrscan.Close();
             MessageBox.Show("Thank you for submitting your info!", "Info Submitted!");
@@ -376,7 +370,7 @@ namespace Contact_Trace
         {
             try
             {
-                StreamReader qrscan = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingQRScanned.txt");
+                StreamReader qrscan = new StreamReader(@"C:\Users\valen\O-O-P\Contact-Tracing\ContactTracingWholeForm.txt");
                 String line = qrscan.ReadToEnd();
                 MessageBox.Show(line, "List of Contact's Scanned QR Form");
                 qrscan.Close();
